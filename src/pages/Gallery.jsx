@@ -1,3 +1,5 @@
+import FaqSection from '../components/FaqSection';
+
 export default function Gallery() {
   return (
     <div className="pt-16 md:pt-20">
@@ -20,7 +22,7 @@ export default function Gallery() {
       </section>
 
       {/* Transformation Cards */}
-      <section className="py-24 px-8 bg-surface">
+      <section className="py-16 px-8 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 animate-fade-up">
             <h2 className="text-4xl font-black italic tracking-tighter">ELITE TRANSFORMATION LOG</h2>
@@ -152,7 +154,7 @@ export default function Gallery() {
       </section>
 
       {/* Masonry Gallery */}
-      <section className="py-24 px-8 bg-surface-container-low">
+      <section className="py-16 px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-fade-up">
             <h2 className="text-5xl font-black italic tracking-tighter">THE ARENA</h2>
@@ -181,6 +183,8 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+      
+      <FaqSection />
     </div>
   );
 }

@@ -9,7 +9,7 @@ import Gallery from './pages/Gallery';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Deep-fitness">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow pb-20 md:pb-0">

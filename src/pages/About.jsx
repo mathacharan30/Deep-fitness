@@ -1,11 +1,13 @@
+import FaqSection from '../components/FaqSection';
+
 export default function About() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden px-6 md:px-8 py-12 md:py-20 bg-surface">
+      <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden px-6 md:px-8 py-10 md:py-16 bg-surface">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative z-10 animate-fade-up">
-            <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter leading-none text-on-surface mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-on-surface mb-6">
               Meet the Team <br/>Behind Your <br/><span className="text-primary-container bg-on-surface px-4">Transformation</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-lg font-medium leading-relaxed mb-8">
@@ -34,7 +36,7 @@ export default function About() {
       </section>
 
       {/* Gym Story & Stats */}
-      <section className="py-32 px-8 bg-surface-container-low">
+      <section className="py-20 px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-16 items-start">
             <div className="md:w-1/2 animate-fade-up">
@@ -68,7 +70,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-32 px-8 bg-surface">
+      <section className="py-20 px-8 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-up">
             <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase">The Precision Edge</h2>
@@ -100,7 +102,7 @@ export default function About() {
       </section>
 
       {/* Trainer Profiles */}
-      <section className="py-32 px-8 bg-surface-container-high">
+      <section className="py-20 px-8 bg-surface-container-high">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 animate-fade-up">
             <div>
@@ -184,7 +186,7 @@ export default function About() {
       </section>
 
       {/* Gym Photos Grid (Bento Style) */}
-      <section className="py-32 px-8 bg-surface">
+      <section className="py-20 px-8 bg-surface">
         <div className="max-w-7xl mx-auto animate-fade-up delay-100">
           <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
             <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
@@ -203,6 +205,8 @@ export default function About() {
           </div>
         </div>
       </section>
+      
+      <FaqSection />
     </div>
   );
 }

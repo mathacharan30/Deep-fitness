@@ -1,8 +1,10 @@
+import FaqSection from '../components/FaqSection';
+
 export default function Services() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <header className="pt-8 md:pt-32 pb-12 md:pb-20 px-6 md:px-8 max-w-7xl mx-auto">
+      <header className="pt-8 md:pt-16 pb-8 md:pb-12 px-6 md:px-8 max-w-7xl mx-auto">
         <div className="relative overflow-hidden rounded-xl bg-surface-container-low min-h-[300px] md:min-h-[500px] flex flex-col justify-center p-8 md:p-12 lg:p-20">
           <div className="absolute inset-0 opacity-20">
             <img alt="Gym Interior" className="w-full h-full object-cover grayscale" data-alt="industrial minimalist gym interior with concrete walls and high ceilings showcasing premium weightlifting equipment in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_TEnaWvQ8I8s8Lb4rbwa_j9Py-y1AKD55LEO-DUhbuwTAHv0VrhNs_mltdZMyz_ClWtZ103-1gxvq1ySu0VyxU1_Z3NitsNiprryTKD5vKtmCwxrLP4XPKWYIcS232fw1RIhD8ks_KPmg1Mj5uXFUhCoYZlfqn_p8VPXhx0_4lPtWxVnax_nNo9CFcJTzps5FmrdsXluCXQMSJZkaMZeNqAQSOKIBcZ3oIPUYJa71Zt5ddemD9aeMQxiXpWjWqEuJ4OlT3N81WX2m"/>
@@ -25,7 +27,7 @@ export default function Services() {
       </header>
 
       {/* Services Grid */}
-      <section className="py-20 px-8 max-w-7xl mx-auto">
+      <section className="py-16 px-8 max-w-7xl mx-auto">
         <div className="mb-16 animate-fade-up">
           <h2 className="text-3xl font-black uppercase tracking-tight mb-2">Our Frameworks</h2>
           <div className="h-1 w-24 bg-primary"></div>
@@ -146,7 +148,7 @@ export default function Services() {
       </section>
 
       {/* Membership Pricing */}
-      <section className="py-24 px-8 max-w-7xl mx-auto bg-surface">
+      <section className="py-16 px-8 max-w-7xl mx-auto bg-surface">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl font-black uppercase tracking-tighter mb-4">Membership Tiers</h2>
           <p className="text-on-surface-variant max-w-2xl mx-auto">Scalable solutions for dedicated individuals. Select the architectural level that matches your commitment.</p>
@@ -200,6 +202,8 @@ export default function Services() {
           </div>
         </div>
       </section>
+      
+      <FaqSection />
     </div>
   );
 }

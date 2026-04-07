@@ -1,3 +1,5 @@
+import FaqSection from '../components/FaqSection';
+
 export default function Contact() {
   const WHATSAPP_NUMBER = "1234567890"; // Same placeholder
   const CALL_NUMBER = "+1234567890"; // Same placeholder
@@ -15,7 +17,7 @@ export default function Contact() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="pt-12 md:pt-32 pb-12 md:pb-20 px-6 md:px-8 max-w-7xl mx-auto">
+      <section className="pt-12 md:pt-20 pb-8 md:pb-16 px-6 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 animate-fade-up delay-100 mt-4 md:mt-0">
             <span className="inline-block px-4 py-1 bg-primary-container text-on-primary-container text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase rounded-full">Precision Performance</span>
@@ -45,7 +47,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Core */}
-      <section className="bg-surface-container-low py-24 px-8">
+      <section className="bg-surface-container-low py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 animate-fade-up">
             {/* Left: Contact Details */}
@@ -154,7 +156,7 @@ export default function Contact() {
       </section>
 
       {/* Quick Contact Cards (Bento) */}
-      <section className="py-24 px-8 bg-surface">
+      <section className="py-16 px-8 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up">
             <div className="bg-surface-container p-8 rounded-xl flex flex-col justify-between group hover:bg-surface-container-highest transition-colors cursor-pointer" onClick={handleCall}>
@@ -184,6 +186,8 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      
+      <FaqSection />
     </div>
   );
 }

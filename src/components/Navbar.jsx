@@ -51,13 +51,7 @@ export default function Navbar() {
         {/* Desktop Right + Mobile Hamburger */}
         <div className="flex items-center gap-3">
           <a
-            href={`tel:+${phoneNumber}`}
-            className="hidden lg:block font-['Space_Grotesk'] text-sm font-bold uppercase text-neutral-600 hover:text-yellow-500 transition-colors"
-          >
-            Call Now
-          </a>
-          <a
-            href={`https://wa.me/${whatsappNumber}?text=Hi, I want to book a free trial!`}
+            href={`https://wa.me/${whatsappNumber}?text=Hi, am interested in joining your gym`}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block bg-yellow-400 text-neutral-900 font-bold uppercase text-xs px-5 py-2.5 rounded hover:bg-yellow-500 transition-all shadow whitespace-nowrap"
@@ -143,14 +137,7 @@ export default function Navbar() {
           <span className="text-[10px] font-bold uppercase font-['Space_Grotesk']">Call</span>
         </a>
 
-        {/* Center: Page nav shortcut trigger */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="flex flex-col items-center gap-1 text-neutral-500 active:text-yellow-500 transition-colors min-w-[60px] py-1"
-        >
-          <span className="material-symbols-outlined text-xl">{menuOpen ? 'close' : 'menu'}</span>
-          <span className="text-[10px] font-bold uppercase font-['Space_Grotesk']">Menu</span>
-        </button>
+        {/* Menu button removed as requested */}
 
         <a
           href={`https://wa.me/${whatsappNumber}?text=Hi`}
@@ -159,11 +146,11 @@ export default function Navbar() {
           className="flex flex-col items-center gap-1 text-neutral-500 active:text-yellow-500 transition-colors min-w-[60px] py-1"
         >
           <span className="material-symbols-outlined text-xl">chat</span>
-          <span className="text-[10px] font-bold uppercase font-['Space_Grotesk']">Chat</span>
+          <span className="text-[10px] font-bold uppercase font-['Space_Grotesk']">WhatsApp</span>
         </a>
 
         <a
-          href={`https://wa.me/${whatsappNumber}?text=Hi, I want to book a free trial!`}
+          href={`https://wa.me/${whatsappNumber}?text=Hi, am interested in joining your gym`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-1 bg-yellow-400 text-neutral-900 rounded-xl px-4 min-w-[70px] py-2 active:scale-95 transition-transform"
