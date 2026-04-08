@@ -8,15 +8,15 @@ export default function Home() {
   return (
     <div className="pt-16 md:pt-20">
       {/* 1. Intro (Hero Section) */}
-      <section className="relative flex overflow-hidden bg-background lg:min-h-[90vh] lg:items-center">
+      <section className="relative flex overflow-hidden bg-white lg:min-h-[90vh] lg:items-center">
         <div className="max-w-7xl mx-auto px-6 md:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-center py-6 md:py-10 lg:py-12">
           {/* LEFT: Text content */}
           <div className="z-10 animate-fade-up order-2 lg:order-1 pb-8 lg:pb-0">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter mb-8 text-on-surface">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter mb-8 text-neutral-900">
               Transform Your Health <br />
-              <span className="text-primary italic">Transform Your Life</span>
+              <span className="text-yellow-500">Transform Your Life</span>
             </h1>
-            <p className="text-base md:text-lg text-on-surface-variant max-w-lg mb-10 font-medium leading-relaxed">
+            <p className="text-base md:text-lg text-neutral-600 max-w-lg mb-10 font-medium leading-relaxed">
               Join the best gym to build your dream body. We offer expert guidance to make you stronger and healthier every single day.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -24,14 +24,14 @@ export default function Home() {
                 href={`https://wa.me/919019550010?text=Hi`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-container-low text-on-surface px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-surface-container-high transition-colors shadow border border-white/5"
+                className="bg-neutral-100 text-neutral-800 px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-neutral-200 transition-colors shadow border border-neutral-200"
               >
                 <span className="material-symbols-outlined text-green-500 text-base">chat</span>
                 WhatsApp
               </a>
               <a
                 href={`tel:+919019550010`}
-                className="bg-surface-container-highest text-on-surface px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-surface-container transition-colors shadow"
+                className="bg-neutral-900 text-white px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-neutral-800 transition-colors shadow"
               >
                 <span className="material-symbols-outlined text-base">call</span>
                 Call Now
@@ -60,10 +60,10 @@ export default function Home() {
               src={heroAthlete}
               className="relative animate-float object-contain w-full max-w-[260px] md:max-w-[380px] lg:max-w-[500px]"
               style={{
-                mixBlendMode: 'normal',
+                mixBlendMode: 'multiply',
                 height: 'auto',
                 zIndex: 2,
-                filter: 'drop-shadow(0 0 50px rgba(234,179,8,0.2))',
+                filter: 'contrast(1.02) brightness(1.0)',
               }}
             />
           </div>
