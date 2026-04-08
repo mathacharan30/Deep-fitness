@@ -74,14 +74,16 @@ export default function Contact() {
                 <p className="text-sm text-on-surface-variant">24/7 Response Guaranteed</p>
               </div>
             </div>
-                  <div className="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
-                    <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">location_on</span>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Our Location</p>
-                    <p className="text-xl font-bold">208, HUN Complex</p>
-                    <p className="text-sm text-on-surface-variant leading-tight">Shardhadevi nagar circle, TK Layout,<br/> New Kantharaj Urs Rd, Mysuru - 570009</p>
-                  </div>
+            <div className="group flex flex-col items-center text-center gap-6 cursor-pointer" onClick={() => window.open('https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19')}>
+              <div className="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
+                <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">location_on</span>
+              </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Our Location</p>
+                <p className="text-xl font-bold">208, HUN Complex</p>
+                <p className="text-sm text-on-surface-variant leading-tight">Shardhadevi nagar circle, TK Layout,<br/> New Kantharaj Urs Rd, Mysuru - 570009</p>
+              </div>
+            </div>
           </div>
           <div className="pt-8 text-center animate-fade-up delay-200">
             <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-6">Social Integration</p>
@@ -115,39 +117,22 @@ export default function Contact() {
         <img alt="Location Map" className="w-full h-full object-cover grayscale brightness-90 transition-transform duration-1000 group-hover:scale-105" data-alt="High-contrast grey map of Mysuru location" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sCxCUnj7cBF6tvgT820NuxcJ5m7-kSGC2W_IWsHsWqLRtiWZ8pCQIXv_FvXGmoEzjIzU3Xt6jYm0OPkxJ6M65p6zxSku-nOv7Is_uurLr79ndoESqhrioqctmwMlYyVgcXwjh0goJj5mW1F1erc2kUxt3v4WBfa1TqOhCseqJM5w9T61eddoZhD7TK6Rk1i1vfNzcUk1wzA-hFcbhtrmvnB_x-b0ZZJFJ9YOyFUZ4-e6Mvhth8X5Kt2etcBzcxa5LLpCh8YZ7GeF"/>
       </section>
 
-      {/* Quick Contact Cards (Bento) */}
+      {/* Simple Contact Banner */}
       <section className="py-16 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up">
-            <div className="bg-surface-container p-8 rounded-xl flex flex-col justify-between group hover:bg-surface-container-highest transition-colors cursor-pointer" onClick={handleCall}>
-              <span className="material-symbols-outlined text-4xl text-primary mb-8" style={{fontVariationSettings: "'FILL' 1"}}>bolt</span>
-              <div>
-                <h4 className="text-xl font-black uppercase mb-2">Fast Lane</h4>
-                <p className="text-sm text-on-surface-variant mb-6">Immediate inquiries for memberships and trials.</p>
-                <a className="text-xs font-black uppercase tracking-widest text-on-surface border-b border-primary-fixed pb-1 group-hover:text-primary transition-colors" href={`tel:${CALL_NUMBER}`}>Dial Now</a>
-              </div>
-            </div>
-            <div className="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between group cursor-pointer" onClick={handleWhatsApp}>
-              <span className="material-symbols-outlined text-4xl text-primary mb-8">support_agent</span>
-              <div>
-                <h4 className="text-xl font-black uppercase mb-2 text-on-surface">24/7 Concierge</h4>
-                <p className="text-sm text-on-surface-variant mb-6">Existing athletes needing schedule adjustments.</p>
-                <a className="text-xs font-black uppercase tracking-widest text-primary border-b border-primary pb-1 font-bold" onClick={handleWhatsApp}>Open Chat</a>
-              </div>
-            </div>
-            <div className="bg-primary-container p-8 rounded-xl flex flex-col justify-between group border-2 border-primary-fixed/20 cursor-pointer">
-              <span className="material-symbols-outlined text-4xl text-on-primary-container mb-8">corporate_fare</span>
-              <div>
-                <h4 className="text-xl font-black uppercase mb-2 text-on-primary-container">Corporate</h4>
-                <p className="text-sm text-on-primary-container/70 mb-6">Performance programs for executive teams.</p>
-                <a className="text-xs font-black uppercase tracking-widest text-on-primary-container border-b border-on-primary-container pb-1" href="mailto:corporate@arch-athlete.com">Email Partnerships</a>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto text-center animate-fade-up border border-surface-container-highest p-8 rounded-xl shadow-sm">
+          <h3 className="text-2xl font-black uppercase mb-4">Still have questions?</h3>
+          <p className="text-on-surface-variant mb-6">We're always here to help you get started on your fitness journey.</p>
+          <div className="flex justify-center gap-4">
+            <button className="bg-primary text-on-primary font-bold uppercase px-6 py-3 rounded shadow hover:bg-primary-dim transition-colors" onClick={handleCall}>Call Now</button>
+            <button className="bg-surface-container-highest font-bold uppercase px-6 py-3 rounded shadow hover:bg-surface-container transition-colors" onClick={handleWhatsApp}>WhatsApp Us</button>
           </div>
         </div>
       </section>
       
-      <FaqSection />
+      <FaqSection faqs={[
+        { question: "Do you have locker facilities?", answer: "Yes, lockers are available for members." },
+        { question: "Can I pause my membership?", answer: "Yes, membership pause options are available under certain conditions." }
+      ]} />
     </div>
   );
 }

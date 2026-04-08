@@ -29,7 +29,7 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 -ml-2 z-10" onClick={() => setMenuOpen(false)}>
+        <Link to="/" className="flex items-center gap-2 -ml-2 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
           <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
           </div>
@@ -44,6 +44,7 @@ export default function Navbar() {
             <Link
               key={to}
               to={to}
+              onClick={() => window.scrollTo(0, 0)}
               className={`font-['Space_Grotesk'] tracking-tight text-sm uppercase font-bold transition-colors duration-300
                 ${pathname === to
                   ? 'text-neutral-900 border-b-2 border-yellow-400 pb-1'
@@ -93,7 +94,7 @@ export default function Navbar() {
             <Link
               key={to}
               to={to}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}
               className={`flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-colors
                 ${pathname === to
                   ? 'bg-yellow-400 text-neutral-900'

@@ -39,9 +39,9 @@ export default function Services() {
             { title: 'Cross Fit', icon: 'run_circle', img: 'https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=500&auto=format&fit=crop' },
             { title: 'Zumba', icon: 'music_note', img: 'https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=500&auto=format&fit=crop' },
             { title: 'Dance Fitness', icon: 'star', img: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=500&auto=format&fit=crop' },
-            { title: 'Kids Dance', icon: 'child_care', img: 'https://images.unsplash.com/photo-1538561845115-38dbbcbea826?q=80&w=500&auto=format&fit=crop' },
+            { title: 'Kids Dance', icon: 'child_care', img: 'https://images.unsplash.com/photo-1545622783-a444a7f0e340?q=80&w=500&auto=format&fit=crop' },
             { title: 'Yoga', icon: 'self_improvement', img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop' },
-            { title: 'Nutrition & Diet', icon: 'restaurant', img: 'https://images.unsplash.com/photo-1490645935967-10de6ba810b6?q=80&w=500&auto=format&fit=crop' }
+            { title: 'Nutrition & Diet', icon: 'restaurant', img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop' }
           ].map((service, index) => (
             <div key={index} className="group bg-surface-container-lowest overflow-hidden flex flex-col rounded-xl hover:shadow-2xl transition-all duration-300 animate-fade-up" style={{animationDelay: `${index * 50}ms`}}>
               <div className="h-48 overflow-hidden relative">
@@ -92,7 +92,15 @@ export default function Services() {
         </div>
       </section>
       
-      <FaqSection />
+      <FaqSection faqs={[
+        { question: "Do you have personal trainers?", answer: "Yes, certified trainers are available for personal training sessions." },
+        { question: "What equipment do you have?", answer: "We have modern cardio machines, weight training equipment, and functional fitness tools." },
+        { question: "Do you provide diet plans?", answer: "Yes, we offer basic diet guidance and customized plans through our trainers." },
+        { question: "Do you have group classes?", answer: "Yes, we offer classes like Zumba, yoga, and functional training." },
+        { question: "Do you offer weight loss programs?", answer: "Yes, we provide structured weight loss and fitness programs." },
+        { question: "Are trainers certified?", answer: "Yes, all our trainers are professionally certified." },
+        { question: "Is there a personal training cost?", answer: "Yes, personal training is available at an additional cost." }
+      ]} />
     </div>
   );
 }

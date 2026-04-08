@@ -1,26 +1,9 @@
 import { useState } from 'react';
 
-export default function FaqSection() {
+export default function FaqSection({ faqs = [] }) {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqs = [
-    {
-      question: "What makes your approach different?",
-      answer: "We treat fitness like architectural design. We analyze your biomechanics, structural integrity, and metabolic profile before designing a customized blueprint for your body. No generic workouts."
-    },
-    {
-      question: "Is the facility open 24/7?",
-      answer: "Yes, our facility is equipped with biometric access, allowing our members to train on their own schedule 24/7. Staffed hours are Mon-Fri 6AM to 10PM."
-    },
-    {
-      question: "Do I need to be an elite athlete to join?",
-      answer: "Not entirely. You need an elite mindset. We work with beginners to pros, provided you are dedicated to structural and metabolic transformation."
-    },
-    {
-      question: "What is included in the free trial?",
-      answer: "The 7-day trial includes full facility access, one consultation session to assess your mechanics, and access to our recovery lounge."
-    }
-  ];
+  if (!faqs || faqs.length === 0) return null;
 
   return (
     <section className="py-20 px-8 bg-surface-container-low border-t border-outline-variant/30">

@@ -253,7 +253,12 @@ export default function Home() {
       </section>
 
       {/* 5.5 FAQs */}
-      <FaqSection />
+      <FaqSection faqs={[
+        { question: "What are your gym timings?", answer: "We are open from early morning to late evening. Please check our contact page for exact timings." },
+        { question: "Do you offer a free trial?", answer: "Yes, we offer a free trial session for new members." },
+        { question: "What are your membership fees?", answer: "Our plans are affordable and flexible. Contact us or visit the gym for the latest pricing." },
+        { question: "Is there a separate section for ladies?", answer: "Yes, we provide a comfortable and safe workout space for women." }
+      ]} />
 
       {/* 6. Membership Preview (Packages) */}
       <section className="py-16 px-8 bg-surface-container-low">
@@ -290,8 +295,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="text-xs font-black uppercase text-primary tracking-widest mb-2">Hours</div>
-                <p className="text-xl font-bold">Open 24/7 for Members</p>
-                <p className="text-on-surface-variant font-medium">Staffed: Mon-Fri 6AM - 10PM</p>
+                <p className="text-xl font-bold">all day 6am to 9pm only</p>
               </div>
               <div className="pt-4">
                 <button 
