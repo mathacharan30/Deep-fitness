@@ -16,7 +16,7 @@ export default function Gallery() {
             <span className="text-primary text-[text-shadow:0_0_15px_rgba(243,243,0,0.4)]">REAL RESULTS.</span>
           </h1>
           <p className="text-xl md:text-2xl text-on-surface-variant font-medium max-w-2xl">
-            Performance isn't just about the finish line. It's about the architectural rebuilding of the self. Witness the precision of transformation.
+            See how our members have transformed their lives and health through consistent effort and expert guidance.
           </p>
         </div>
       </section>
@@ -25,8 +25,8 @@ export default function Gallery() {
       <section className="py-16 px-8 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 animate-fade-up">
-            <h2 className="text-4xl font-black italic tracking-tighter">ELITE TRANSFORMATION LOG</h2>
-            <div className="text-sm font-bold tracking-widest uppercase text-outline">Selected Performance Data / 2024</div>
+            <h2 className="text-4xl font-black italic tracking-tighter">OUR SUCCESS STORIES</h2>
+            <div className="text-sm font-bold tracking-widest uppercase text-outline">Recent Transformations</div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 hover-group">
             {/* Transformation 1 */}
@@ -157,7 +157,7 @@ export default function Gallery() {
       <section className="py-16 px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-fade-up">
-            <h2 className="text-5xl font-black italic tracking-tighter">THE ARENA</h2>
+            <h2 className="text-5xl font-black italic tracking-tighter">OUR GYM</h2>
             <div className="w-32 h-1 bg-primary mt-4"></div>
           </div>
           {/* using columns-1 md:columns-2 lg:columns-3 for masonry effect in tailwind */}

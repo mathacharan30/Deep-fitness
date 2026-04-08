@@ -11,17 +11,17 @@ export default function About() {
               Meet the Team <br/>Behind Your <br/><span className="text-primary-container bg-on-surface px-4">Transformation</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-lg font-medium leading-relaxed mb-8">
-              Precision-engineered performance. Our elite roster of architectural athletes combines structural science with raw power to rebuild your potential from the ground up.
+              We are a team of expert trainers dedicated to helping you achieve your ultimate fitness goals through personalized coaching and proven methods.
             </p>
             <div className="flex gap-6">
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-on-surface">1000+</span>
+                <span className="text-4xl font-bold text-on-surface">3000+</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-outline">Members Moved</span>
               </div>
               <div className="w-px h-12 bg-outline-variant/30"></div>
               <div className="flex flex-col">
-                <span className="text-4xl font-bold text-on-surface">15+</span>
-                <span className="text-xs font-bold uppercase tracking-widest text-outline">Elite Architects</span>
+                <span className="text-4xl font-bold text-on-surface">10+</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-outline">Expert Coaches</span>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function About() {
             <div className="absolute inset-0 bg-primary-container rounded-[2rem] rotate-3 opacity-10"></div>
             <img className="absolute inset-0 w-full h-full object-cover rounded-[2rem] shadow-2xl z-0 grayscale contrast-125" data-alt="Hyper-realistic 3D render of a muscular athlete in a futuristic architectural setting with cinematic yellow rim lighting and atmospheric smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIvJ07wDSu8xstx26FRbdreHH-f26w2Q4hiR1sRMNJ_Z20owZeuOeNRh6C_6ILSE5fREICMKnVSjVIpdOBTvcWfQCKCAXJe1r9iXZZogG5K8Yy51ZVVZouaehwvZfCp_8-rqkk9dXqMuuwWTmVjcWgClnt1o87EETAGEW2N5syy9RHogy7uIfmP-FwJSEc31e4KSpVu7jAJas-GbBxTS4-2ldVyF1QqRPvmosC9AvFuoVMSlh9CHHHkH4MfNEIUvsORTGxUdKORsAZ"/>
             <div className="absolute bottom-10 -left-10 bg-surface-container-lowest p-6 rounded-xl shadow-xl z-20 max-w-xs border-l-4 border-primary">
-              <p className="text-sm font-bold italic">"We don't just train bodies; we architect human performance."</p>
+              <p className="text-sm font-bold italic">"We don't just train bodies; we help you reach your maximum potential."</p>
             </div>
           </div>
         </div>
@@ -40,11 +40,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-16 items-start">
             <div className="md:w-1/2 animate-fade-up">
-              <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Our Foundation</span>
-              <h2 className="text-5xl font-black tracking-tighter leading-tight mb-8">Built on the Principles of <br/>Structural Integrity.</h2>
+              <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">About Us</span>
+              <h2 className="text-4xl lg:text-5xl font-black tracking-tighter leading-tight mb-8">Dedicated to Your Fitness Journey.</h2>
               <div className="space-y-6 text-on-surface-variant text-lg">
-                <p>Founded in 2018, Architectural Athlete was born from a singular vision: to treat the human body with the same reverence and scientific precision as a master architect treats a skyscraper.</p>
-                <p>Our methodology discards the "one size fits all" fitness culture in favor of a biomechanical assessment that respects your unique skeletal structure and performance goals.</p>
+                <p>Deep Fitness is all about helping you become the best version of yourself, carefully and safely.</p>
+                <p>We don't believe in "one size fits all". We create plans that fit your body and your goals perfectly.</p>
               </div>
             </div>
             <div className="md:w-1/2 grid grid-cols-2 gap-4 w-full animate-fade-up delay-200">
@@ -73,29 +73,29 @@ export default function About() {
       <section className="py-20 px-8 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-up">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase">The Precision Edge</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase">Why Choose Us</h2>
             <div className="w-24 h-2 bg-primary mx-auto mt-4"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 hover-group">
             <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-100">
               <span className="material-symbols-outlined text-4xl text-primary mb-6">architecture</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Biomechanical Focus</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Every movement is analyzed for optimal leverage and structural safety.</p>
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Expert Guidance</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
             </div>
             <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-200">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">monitoring</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Data Integration</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Real-time performance tracking that dictates your daily training load.</p>
+              <span className="material-symbols-outlined text-4xl text-primary mb-6">timer</span>
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">24/7 Access</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">Train on your schedule anytime you want with our round-the-clock access.</p>
             </div>
             <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-300">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">diamond</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Elite Environment</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">A distraction-free, premium space designed for deep focus work.</p>
+              <span className="material-symbols-outlined text-4xl text-primary mb-6">nutrition</span>
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Diet Counseling</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">Get the right food plan to grow your muscles and lose fat effectively.</p>
             </div>
             <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-400">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">nutrition</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Systemic Support</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Integrated recovery and nutritional blueprints tailored to your DNA.</p>
+              <span className="material-symbols-outlined text-4xl text-primary mb-6">groups</span>
+              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Supportive Community</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">Train with like-minded friends who motivate and support each other every day.</p>
             </div>
           </div>
         </div>
@@ -106,8 +106,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 animate-fade-up">
             <div>
-              <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">The Architects</span>
-              <h2 className="text-5xl font-black tracking-tighter uppercase">Senior Performance Team</h2>
+              <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Our Coaches</span>
+              <h2 className="text-5xl font-black tracking-tighter uppercase">Training Team</h2>
             </div>
             <button className="hidden md:block border-2 border-on-surface px-8 py-3 font-bold uppercase tracking-widest text-xs hover:bg-on-surface hover:text-white transition-colors">View All Coaches</button>
           </div>
@@ -124,10 +124,10 @@ export default function About() {
                 </div>
               </div>
               <h3 className="text-2xl font-black uppercase tracking-tighter">Marcus Thorne</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Head of Structural Strength</p>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Head of Strength Training</p>
               <div className="space-y-1">
                 <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 12 Years Elite Performance</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Powerlifting & Biomechanics</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Powerlifting & Strength</p>
               </div>
             </div>
             {/* Trainer 2 */}
@@ -141,7 +141,7 @@ export default function About() {
                 </div>
               </div>
               <h3 className="text-2xl font-black uppercase tracking-tighter">Elena Vance</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Director of Mobility</p>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Director of Yoga & Flow</p>
               <div className="space-y-1">
                 <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 9 Years Clinical Kinesiology</p>
                 <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Dynamic Flex & Flow</p>
@@ -158,10 +158,10 @@ export default function About() {
                 </div>
               </div>
               <h3 className="text-2xl font-black uppercase tracking-tighter">Julian Kross</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Hypertrophy Architect</p>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Body Transformation Expert</p>
               <div className="space-y-1">
                 <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 15 Years Body Recomp</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Aesthetic Engineering</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Muscle Building</p>
               </div>
             </div>
             {/* Trainer 4 */}

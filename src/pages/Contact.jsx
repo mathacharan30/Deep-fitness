@@ -1,8 +1,8 @@
 import FaqSection from '../components/FaqSection';
 
 export default function Contact() {
-  const WHATSAPP_NUMBER = "1234567890"; // Same placeholder
-  const CALL_NUMBER = "+1234567890"; // Same placeholder
+  const WHATSAPP_NUMBER = "919019550010"; // Updated number
+  const CALL_NUMBER = "+919019550010"; // Updated number
 
   const handleWhatsApp = (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ export default function Contact() {
               Let’s Start <br/>Your Fitness <br/><span className="text-primary-fixed bg-on-surface px-4 py-1 mt-2 inline-block">Journey</span>
             </h1>
             <p className="text-lg text-on-surface-variant max-w-md leading-relaxed">
-              Designed for high-performance individuals. Our architectural approach to fitness ensures sustainable, elite-level results.
+              Designed for everyone. Our structured approach to fitness ensures you get visible and lasting results.
             </p>
           </div>
           <div className="relative group animate-fade-up delay-300">
@@ -36,7 +36,7 @@ export default function Contact() {
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-xs uppercase font-black tracking-widest text-on-surface-variant">Active Status</p>
-                    <p className="text-2xl font-bold">READY TO ARCHITECT</p>
+                    <p className="text-2xl font-bold">READY TO START</p>
                   </div>
                   <span className="material-symbols-outlined text-4xl text-primary">dynamic_form</span>
                 </div>
@@ -48,93 +48,53 @@ export default function Contact() {
 
       {/* Contact Core */}
       <section className="bg-surface-container-low py-16 px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 animate-fade-up">
-            {/* Left: Contact Details */}
-            <div className="lg:col-span-5 space-y-12">
-              <div className="space-y-4">
-                <h2 className="text-4xl font-black tracking-tighter uppercase">Direct Access</h2>
-                <div className="h-1 w-24 bg-primary"></div>
+        <div className="max-w-5xl mx-auto">
+          <div className="space-y-4 text-center mb-16 animate-fade-up">
+            <h2 className="text-4xl font-black tracking-tighter uppercase">Direct Access</h2>
+            <div className="h-1 w-24 bg-primary mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-fade-up delay-100">
+            <div className="group flex flex-col items-center text-center gap-6 cursor-pointer" onClick={handleCall}>
+              <div className="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
+                <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">call</span>
               </div>
-              <div className="space-y-8">
-                <div className="group flex items-start gap-6 cursor-pointer" onClick={handleCall}>
-                  <div className="w-14 h-14 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
-                    <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">call</span>
-                  </div>
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Telephone</p>
-                    <p className="text-xl font-bold">+1 (234) 567-8910</p>
-                    <p className="text-sm text-on-surface-variant">Mon-Fri 6:00 - 22:00</p>
-                  </div>
-                </div>
-                <div className="group flex items-start gap-6 cursor-pointer" onClick={() => window.open('mailto:performance@arch-athlete.com')}>
-                  <div className="w-14 h-14 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
-                    <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">mail</span>
-                  </div>
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Electronic Mail</p>
-                    <p className="text-xl font-bold">performance@arch-athlete.com</p>
-                    <p className="text-sm text-on-surface-variant">24/7 Response Guaranteed</p>
-                  </div>
-                </div>
-                <div className="group flex items-start gap-6 cursor-pointer">
-                  <div className="w-14 h-14 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
-                    <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">location_on</span>
-                  </div>
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">HQ Location</p>
-                    <p className="text-xl font-bold">445 Precision Avenue</p>
-                    <p className="text-sm text-on-surface-variant">Iron District, New York, NY 10001</p>
-                  </div>
-                </div>
-              </div>
-              <div className="pt-8">
-                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-6">Social Integration</p>
-                <div className="flex gap-4">
-                  <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                    <span className="material-symbols-outlined">share</span>
-                  </a>
-                  <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                    <span className="material-symbols-outlined">public</span>
-                  </a>
-                  <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                    <span className="material-symbols-outlined">podcasts</span>
-                  </a>
-                </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Telephone</p>
+                <p className="text-xl font-bold">+91 90195 50010</p>
+                <p className="text-sm text-on-surface-variant">Mon-Fri 6:00 - 22:00</p>
               </div>
             </div>
-            {/* Right: Contact Form */}
-            <div className="lg:col-span-7">
-              <div className="bg-surface-container-lowest p-10 lg:p-16 rounded-xl border-l-[12px] border-primary-fixed shadow-2xl">
-                <form className="space-y-8" onSubmit={(e) => { e.preventDefault(); alert("Form submitted! (Demo)"); }}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Full Identity</label>
-                      <input className="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant font-medium outline-none" placeholder="John Doe" type="text" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Contact Number</label>
-                      <input className="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant font-medium outline-none" placeholder="+1 (555) 000-0000" type="tel" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Performance Goal</label>
-                    <select className="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all font-medium appearance-none outline-none">
-                      <option>Structural Hypertrophy</option>
-                      <option>Architectural Leanness</option>
-                      <option>Functional Power</option>
-                      <option>Elite Rehabilitation</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Manifesto / Inquiry</label>
-                    <textarea className="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant font-medium outline-none" placeholder="Tell us about your blueprint..." rows="4"></textarea>
-                  </div>
-                  <button className="w-full bg-on-surface text-primary-fixed hover:bg-primary py-5 rounded font-black uppercase tracking-[0.2em] transition-all transform active:scale-[0.98]">
-                    Initialize Consultation
-                  </button>
-                </form>
+            <div className="group flex flex-col items-center text-center gap-6 cursor-pointer" onClick={() => window.open('mailto:deepfitnessgym2025@gmail.com')}>
+              <div className="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
+                <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">mail</span>
               </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Electronic Mail</p>
+                <p className="text-xl font-bold">deepfitnessgym2025@gmail.com</p>
+                <p className="text-sm text-on-surface-variant">24/7 Response Guaranteed</p>
+              </div>
+            </div>
+                  <div className="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300 shadow-md">
+                    <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">location_on</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Our Location</p>
+                    <p className="text-xl font-bold">208, HUN Complex</p>
+                    <p className="text-sm text-on-surface-variant leading-tight">Shardhadevi nagar circle, TK Layout,<br/> New Kantharaj Urs Rd, Mysuru - 570009</p>
+                  </div>
+          </div>
+          <div className="pt-8 text-center animate-fade-up delay-200">
+            <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-6">Social Integration</p>
+            <div className="flex gap-4 justify-center">
+              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+                <span className="material-symbols-outlined">share</span>
+              </a>
+              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+                <span className="material-symbols-outlined">public</span>
+              </a>
+              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+                <span className="material-symbols-outlined">podcasts</span>
+              </a>
             </div>
           </div>
         </div>
@@ -145,7 +105,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-neutral-900/40 z-10 transition-opacity group-hover:opacity-20 pointer-events-none"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none animate-fade-up">
           <div className="bg-surface p-8 rounded-xl shadow-2xl space-y-4 max-w-sm pointer-events-auto border-b-4 border-primary">
-            <h3 className="text-2xl font-black uppercase tracking-tighter">The Laboratory</h3>
+            <h3 className="text-2xl font-black uppercase tracking-tighter">Our Facility</h3>
             <p className="text-sm text-on-surface-variant">Visit our elite training facility in the heart of the city.</p>
             <button className="w-full bg-primary-fixed text-on-primary-fixed font-black uppercase text-xs py-3 rounded hover:bg-primary transition-colors flex items-center justify-center gap-2">
               <span className="material-symbols-outlined text-sm">near_me</span> Get Directions

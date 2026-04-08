@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import logoImg from '../assets/logo.png';
 
 export default function Navbar() {
   const whatsappNumber = "1234567890";
@@ -28,8 +29,13 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link to="/" className="text-xl md:text-2xl font-black italic tracking-tighter text-neutral-900" onClick={() => setMenuOpen(false)}>
-          Architectural Athlete
+        <Link to="/" className="flex items-center gap-2 -ml-2 z-10" onClick={() => setMenuOpen(false)}>
+          <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+            <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
+          </div>
+          <span className="text-xl md:text-2xl font-black italic tracking-tighter text-neutral-900 uppercase">
+            Deep Fitness
+          </span>
         </Link>
 
         {/* Desktop Links */}
