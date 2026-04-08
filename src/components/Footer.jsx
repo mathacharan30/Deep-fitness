@@ -6,17 +6,17 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {/* Branding */}
         <div className="col-span-1 md:col-span-1">
-          <div className="text-xl font-black text-neutral-900 dark:text-white mb-4">DEEP FITNESS</div>
-          <p className="text-neutral-500 text-xs font-medium uppercase tracking-wider leading-relaxed">The best gym in Mysuru offering top-notch facilities and expert guidance.</p>
+          <div className="text-xl font-black text-on-surface mb-4 tracking-tighter italic">DEEP FITNESS</div>
+          <p className="text-on-surface-variant text-xs font-medium uppercase tracking-wider leading-relaxed">The best gym in Mysuru offering top-notch facilities and expert guidance.</p>
         </div>
         
         {/* Pages */}
         <div>
           <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-primary mb-6">Pages</div>
           <ul className="space-y-4">
-            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-white hover:translate-x-1 transition-transform inline-block" to="/">Home</Link></li>
-            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-white hover:translate-x-1 transition-transform inline-block" to="/about">About</Link></li>
-            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-500 hover:text-neutral-900 dark:hover:text-white hover:translate-x-1 transition-transform inline-block" to="/services">Services</Link></li>
+            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" to="/">Home</Link></li>
+            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" to="/about">About</Link></li>
+            <li><Link className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" to="/services">Services</Link></li>
           </ul>
         </div>
         
@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-primary mb-6">Location</div>
           <ul className="space-y-4">
-            <li><a href="https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19" target="_blank" rel="noopener noreferrer" className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-500 hover:text-white transition-colors block">208, HUN Complex, Mysuru</a></li>
+            <li><a href="https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19" target="_blank" rel="noopener noreferrer" className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-on-surface-variant hover:text-white transition-colors block">208, HUN Complex, Mysuru</a></li>
             <li><p className="font-['Space_Grotesk'] text-[10px] font-medium tracking-widest uppercase text-neutral-600">Shardhadevi nagar circle, New Kantharaj Urs Rd, TK Layout, Mysuru, Karnataka 570009</p></li>
           </ul>
         </div>
@@ -33,11 +33,11 @@ export default function Footer() {
         <div>
           <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-primary mb-6">Connect</div>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-              <span className="material-symbols-outlined text-sm dark:text-white">share</span>
+            <a href="#" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
+              <span className="material-symbols-outlined text-sm text-on-surface">share</span>
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-              <span className="material-symbols-outlined text-sm dark:text-white">photo_camera</span>
+            <a href="#" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
+              <span className="material-symbols-outlined text-sm text-on-surface">photo_camera</span>
             </a>
           </div>
         </div>

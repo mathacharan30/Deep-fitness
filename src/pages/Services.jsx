@@ -18,7 +18,7 @@ export default function Services() {
               We offer a wide variety of fitness formats to keep you engaged and moving towards your best self.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} className="bg-inverse-surface text-surface px-8 py-4 font-bold text-sm uppercase tracking-widest flex items-center gap-2 hover:bg-on-surface transition-colors rounded">
+              <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} className="bg-primary text-on-primary px-8 py-4 font-bold text-sm uppercase tracking-widest flex items-center gap-2 hover:bg-primary-dim transition-colors rounded shadow-lg">
                 Explore Membership <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-2">Start Your Journey Today</h2>
             <p className="text-on-primary font-medium text-lg">Claim your exclusive free trial. Limited slots available monthly.</p>
           </div>
-          <button className="relative z-10 bg-on-surface text-surface px-10 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:scale-105 transition-transform active:scale-95 whitespace-nowrap">
+          <button className="relative z-10 bg-surface-container-highest text-on-surface px-10 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:scale-105 transition-transform active:scale-95 whitespace-nowrap">
             Start 7-Day Trial
           </button>
           {/* Decorative Element */}

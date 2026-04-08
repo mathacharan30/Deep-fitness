@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="space-y-6 animate-fade-up delay-100 mt-4 md:mt-0">
             <span className="inline-block px-4 py-1 bg-primary-container text-on-primary-container text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase rounded-full">Precision Performance</span>
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface">
-              Let’s Start <br/>Your Fitness <br/><span className="text-primary-fixed bg-on-surface px-4 py-1 mt-2 inline-block">Journey</span>
+              Let’s Start <br/>Your Fitness <br/><span className="text-primary bg-surface-container-high px-4 py-1 mt-2 inline-block rounded-lg">Journey</span>
             </h1>
             <p className="text-lg text-on-surface-variant max-w-md leading-relaxed">
               Designed for everyone. Our structured approach to fitness ensures you get visible and lasting results.
@@ -86,13 +86,13 @@ export default function Contact() {
           <div className="pt-8 text-center animate-fade-up delay-200">
             <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-6">Social Integration</p>
             <div className="flex gap-4 justify-center">
-              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">share</span>
               </a>
-              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">public</span>
               </a>
-              <a className="w-12 h-12 bg-on-surface text-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">podcasts</span>
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function Contact() {
 
       {/* Map Section */}
       <section className="h-[600px] relative overflow-hidden group">
-        <div className="absolute inset-0 bg-neutral-900/40 z-10 transition-opacity group-hover:opacity-20 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[#121212]/40 z-10 transition-opacity group-hover:opacity-20 pointer-events-none"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none animate-fade-up">
           <div className="bg-surface p-8 rounded-xl shadow-2xl space-y-4 max-w-sm pointer-events-auto border-b-4 border-primary">
             <h3 className="text-2xl font-black uppercase tracking-tighter">Our Facility</h3>
@@ -112,7 +112,7 @@ export default function Contact() {
             </button>
           </div>
         </div>
-        <img alt="Location Map" className="w-full h-full object-cover grayscale brightness-75 transition-transform duration-1000 group-hover:scale-105" data-alt="High-contrast black and white map of Manhattan with yellow highlighted routes and architectural icons representing the gym location" data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sCxCUnj7cBF6tvgT820NuxcJ5m7-kSGC2W_IWsHsWqLRtiWZ8pCQIXv_FvXGmoEzjIzU3Xt6jYm0OPkxJ6M65p6zxSku-nOv7Is_uurLr79ndoESqhrioqctmwMlYyVgcXwjh0goJj5mW1F1erc2kUxt3v4WBfa1TqOhCseqJM5w9T61eddoZhD7TK6Rk1i1vfNzcUk1wzA-hFcbhtrmvnB_x-b0ZZJFJ9YOyFUZ4-e6Mvhth8X5Kt2etcBzcxa5LLpCh8YZ7GeF"/>
+        <img alt="Location Map" className="w-full h-full object-cover grayscale brightness-90 transition-transform duration-1000 group-hover:scale-105" data-alt="High-contrast grey map of Mysuru location" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sCxCUnj7cBF6tvgT820NuxcJ5m7-kSGC2W_IWsHsWqLRtiWZ8pCQIXv_FvXGmoEzjIzU3Xt6jYm0OPkxJ6M65p6zxSku-nOv7Is_uurLr79ndoESqhrioqctmwMlYyVgcXwjh0goJj5mW1F1erc2kUxt3v4WBfa1TqOhCseqJM5w9T61eddoZhD7TK6Rk1i1vfNzcUk1wzA-hFcbhtrmvnB_x-b0ZZJFJ9YOyFUZ4-e6Mvhth8X5Kt2etcBzcxa5LLpCh8YZ7GeF"/>
       </section>
 
       {/* Quick Contact Cards (Bento) */}
@@ -127,12 +127,12 @@ export default function Contact() {
                 <a className="text-xs font-black uppercase tracking-widest text-on-surface border-b border-primary-fixed pb-1 group-hover:text-primary transition-colors" href={`tel:${CALL_NUMBER}`}>Dial Now</a>
               </div>
             </div>
-            <div className="bg-on-surface p-8 rounded-xl flex flex-col justify-between group cursor-pointer" onClick={handleWhatsApp}>
-              <span className="material-symbols-outlined text-4xl text-primary-fixed mb-8">support_agent</span>
+            <div className="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between group cursor-pointer" onClick={handleWhatsApp}>
+              <span className="material-symbols-outlined text-4xl text-primary mb-8">support_agent</span>
               <div>
-                <h4 className="text-xl font-black uppercase mb-2 text-surface">24/7 Concierge</h4>
-                <p className="text-sm text-tertiary-fixed-dim/60 mb-6">Existing athletes needing schedule adjustments.</p>
-                <a className="text-xs font-black uppercase tracking-widest text-primary-fixed border-b border-primary-fixed pb-1" onClick={handleWhatsApp}>Open Chat</a>
+                <h4 className="text-xl font-black uppercase mb-2 text-on-surface">24/7 Concierge</h4>
+                <p className="text-sm text-on-surface-variant mb-6">Existing athletes needing schedule adjustments.</p>
+                <a className="text-xs font-black uppercase tracking-widest text-primary border-b border-primary pb-1 font-bold" onClick={handleWhatsApp}>Open Chat</a>
               </div>
             </div>
             <div className="bg-primary-container p-8 rounded-xl flex flex-col justify-between group border-2 border-primary-fixed/20 cursor-pointer">

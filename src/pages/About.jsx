@@ -8,7 +8,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative z-10 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-on-surface mb-6">
-              Meet the Team <br/>Behind Your <br/><span className="text-primary-container bg-on-surface px-4">Transformation</span>
+              Meet the Team <br/>Behind Your <br/><span className="text-primary bg-surface-container-high px-4 rounded-lg">Transformation</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-lg font-medium leading-relaxed mb-8">
               We are a team of expert trainers dedicated to helping you achieve your ultimate fitness goals through personalized coaching and proven methods.
@@ -52,9 +52,9 @@ export default function About() {
                 <span className="text-5xl font-black text-on-surface">98%</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-primary mt-2">Success Rate</span>
               </div>
-              <div className="bg-on-surface p-10 rounded-xl flex flex-col justify-end h-48">
-                <span className="text-5xl font-black text-primary-container">12k+</span>
-                <span className="text-xs font-bold uppercase tracking-widest text-surface-variant mt-2">Sessions/Year</span>
+              <div className="bg-surface-container-highest p-10 rounded-xl flex flex-col justify-end h-48">
+                <span className="text-5xl font-black text-primary">12k+</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-2">Sessions/Year</span>
               </div>
               <div className="bg-primary p-10 rounded-xl flex flex-col justify-end h-48">
                 <span className="text-5xl font-black text-white">4.9</span>
@@ -109,14 +109,14 @@ export default function About() {
               <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Our Coaches</span>
               <h2 className="text-5xl font-black tracking-tighter uppercase">Training Team</h2>
             </div>
-            <button className="hidden md:block border-2 border-on-surface px-8 py-3 font-bold uppercase tracking-widest text-xs hover:bg-on-surface hover:text-white transition-colors">View All Coaches</button>
+            <button className="hidden md:block border-2 border-primary px-8 py-3 font-bold uppercase tracking-widest text-xs text-primary hover:bg-primary hover:text-on-primary transition-colors rounded-lg">View All Coaches</button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Trainer 1 */}
             <div className="group animate-fade-up delay-100">
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWc1qM_IpkAq0_wEREz7SYuUQecnj_x0-cSRd1lqAyTMgBI74pGxdsZIXnJ6SrVqWkghw4opKdElfcBwd2tnOibLR-MXjHDz3TzKAXAE61otjkQxkoj2DjBj1ApMYvFmalyYkXQ5pu-tHHeS72kQuFXJqmpnHuj2DXJx4jEu9LVh_8bGDp1CzbRI_gYpnWynTgjhT9f7TcTi_bWFVJvN5kwvwLqYYihXUw4MXKPve9P91I7UEFDcNQfgQFHT3dkFHKtxtItlJbGKJD"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="flex gap-4">
                     <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">share</span>
                     <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">info</span>
@@ -191,7 +191,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
             <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr5itwoxGIoe5AUOnYz5EFK24IsBP1nxyMpWOL4CjNl7l5eyiMqjyWR6Cv9jlU3FuoQD06GkOJ2bnBv6EYxLvbyNiGssB6qi_A_L14agK05XSjdwimYrmeLN4rNFA_oNpliSWhmwKYN982bRfPYjmEHUnaruKh99xiHx1LMMMvym3sR2Z7Qrsbz8cSoFYZ7BpYlTfVGHSGCzc59f1vECwFVFoWwd8Vbz3C5H4S577r4ejk0jMSqRUpb3g7BVo-gJ6tUD1n2CEVsIlK"/>
-              <div className="absolute inset-0 bg-on-surface/20"></div>
+              <div className="absolute inset-0 bg-surface/20"></div>
             </div>
             <div className="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
               <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoTA5SyTzPyQw8SqGZbTbdcl6-M2Tv0fhy0bJf-gQ56mDqWsbzL-jm4y5llQ5_JHRx4VqWZm5KCwCCv6PeKpZW8I7PVj0fq4D-VHjIT9ymBh84aIR1UlVkqSjUPVSX-WogbKx1XezTSrXbUZRVX2tesGKizbMjKwGtEEdcCUxVACgVHAs-_52Yi6rTzkIM8RapY_umE0r6fp5vnueqVkVKCPkz3IOj6NMdvNgVF_bAEd85lbZomIU0HxQkn1p8udMc5vP0q2fu-BtN"/>
