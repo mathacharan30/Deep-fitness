@@ -33,11 +33,8 @@ export default function Footer() {
         <div>
           <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-primary mb-6">Connect</div>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-              <span className="material-symbols-outlined text-sm text-on-surface">share</span>
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-              <span className="material-symbols-outlined text-sm text-on-surface">photo_camera</span>
+            <a href="https://www.instagram.com/deep_fitness_mysore/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer text-on-surface">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
           </div>
         </div>
@@ -46,7 +43,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-neutral-200/10 text-center pb-20 md:pb-0">
         <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400">© 2026 DEEP FITNESS.</div>
-        <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400 mt-2">Developed by <a href="https://www.devlofttech.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Devloft Technologies</a></div>
+        <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400 mt-2">Developed by <a href="https://www.devlofttech.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-600 font-bold hover:text-primary transition-colors">Devloft Technologies</a></div>
       </div>
     </footer>
   );

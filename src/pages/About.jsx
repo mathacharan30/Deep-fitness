@@ -1,4 +1,12 @@
 import FaqSection from '../components/FaqSection';
+import imgHome1 from '../assets/home/IMG20260408193423.jpg';
+import imgHome2 from '../assets/home/IMG20260408193607.jpg';
+import imgHome3 from '../assets/home/IMG20260408194051.jpg';
+import imgHome4 from '../assets/home/IMG20260408194209.jpg';
+import imgAbout1 from '../assets/about/IMG20260408190236.jpg';
+import imgAbout2 from '../assets/about/IMG20260408193422.jpg';
+import imgAbout3 from '../assets/about/IMG20260408193906.jpg';
+import imgAbout4 from '../assets/about/IMG20260408194412.jpg';
 
 export default function About() {
   return (
@@ -7,10 +15,10 @@ export default function About() {
       <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden px-6 md:px-8 py-10 md:py-16 bg-surface">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative z-10 animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-on-surface mb-6">
-              Meet the Team <br/>Behind Your <br/><span className="text-primary bg-surface-container-high px-4 rounded-lg">Transformation</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-on-surface mb-12">
+              Meet the Team <br/>Behind Your <br/><span className="text-primary bg-surface-container-high px-4 py-2 mt-4 inline-block rounded-lg">Transformation</span>
             </h1>
-            <p className="text-xl text-on-surface-variant max-w-lg font-medium leading-relaxed mb-8">
+            <p className="text-xl text-on-surface-variant max-w-lg font-medium leading-relaxed mb-12">
               We are a team of expert trainers dedicated to helping you achieve your ultimate fitness goals through personalized coaching and proven methods.
             </p>
             <div className="flex gap-6">
@@ -76,26 +84,42 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase">Why Choose Us</h2>
             <div className="w-24 h-2 bg-primary mx-auto mt-4"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 hover-group">
-            <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-100">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">architecture</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Expert Guidance</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hover-group">
+            <div className="bg-surface-container-low overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-100 flex flex-col group">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=500&auto=format&fit=crop" alt="Expert Guidance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Expert Guidance</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-200">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">timer</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">24/7 Access</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Train on your schedule anytime you want with our round-the-clock access.</p>
+            <div className="bg-surface-container-highest overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-200 flex flex-col group">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="24/7 Access" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">24/7 Access</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Train on your schedule anytime you want with our round-the-clock access.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-300">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">nutrition</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Diet Counseling</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Get the right food plan to grow your muscles and lose fat effectively.</p>
+            <div className="bg-surface-container-high overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-300 flex flex-col group">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop" alt="Diet Counseling" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Diet Counseling</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Get the right food plan to grow your muscles and lose fat effectively.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-lowest p-8 rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-400">
-              <span className="material-symbols-outlined text-4xl text-primary mb-6">groups</span>
-              <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Supportive Community</h3>
-              <p className="text-sm text-on-surface-variant leading-relaxed">Train with like-minded friends who motivate and support each other every day.</p>
+            <div className="bg-surface-container-low overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up delay-400 flex flex-col group">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop" alt="Supportive Community" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">Supportive Community</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Train with like-minded friends who motivate and support each other every day.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -189,18 +213,18 @@ export default function About() {
       <section className="py-20 px-8 bg-surface">
         <div className="max-w-7xl mx-auto animate-fade-up delay-100">
           <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
-            <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr5itwoxGIoe5AUOnYz5EFK24IsBP1nxyMpWOL4CjNl7l5eyiMqjyWR6Cv9jlU3FuoQD06GkOJ2bnBv6EYxLvbyNiGssB6qi_A_L14agK05XSjdwimYrmeLN4rNFA_oNpliSWhmwKYN982bRfPYjmEHUnaruKh99xiHx1LMMMvym3sR2Z7Qrsbz8cSoFYZ7BpYlTfVGHSGCzc59f1vECwFVFoWwd8Vbz3C5H4S577r4ejk0jMSqRUpb3g7BVo-gJ6tUD1n2CEVsIlK"/>
+            <div className="md:col-span-1 md:row-span-2 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={imgAbout4}/>
               <div className="absolute inset-0 bg-surface/20"></div>
             </div>
-            <div className="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoTA5SyTzPyQw8SqGZbTbdcl6-M2Tv0fhy0bJf-gQ56mDqWsbzL-jm4y5llQ5_JHRx4VqWZm5KCwCCv6PeKpZW8I7PVj0fq4D-VHjIT9ymBh84aIR1UlVkqSjUPVSX-WogbKx1XezTSrXbUZRVX2tesGKizbMjKwGtEEdcCUxVACgVHAs-_52Yi6rTzkIM8RapY_umE0r6fp5vnueqVkVKCPkz3IOj6NMdvNgVF_bAEd85lbZomIU0HxQkn1p8udMc5vP0q2fu-BtN"/>
-            </div>
-            <div className="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM2hJqLFZQF2IVfdzgICuX1JKShz9B9mK7xUA1TRjn_ouUvjwsHvTbp8HynvpHuZiCEvJNIeVfWsefEb4KM2HP7bcR3uNOHQF5pGpO5iuVYJ0eFWXNSEjOXXWktSyOK-mSt0cVU7HZSGlbBnuIM1vjUDoAEbiGG8ed1miHjwto-iG3UO4Nlr82bhLgq9en3owyX5cxHijBBhkNWlNZ5ATs7H7zeb1eg5kxPFxWlVPI__rxBgyWQsMdfMEZGc1Ub1b2A5q7gMFFYNem"/>
-            </div>
             <div className="md:col-span-2 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAswcvirZ7FRvQFhlutyMzFA9L09PG1lMYpdHL5vvHsHwfqPIUu09ThV6aUnJt4jBxTMXbe_61nhOmbTSCRgzDS_wQfzLl0AsmeRxIb8T_TEKeI5Rts2BPuNsNNLrEgFnLOLxX7O8DwmuPmXI1LI2pDWGhJrSYVCMaWxjkRkjtlmyRk72fpTBYvhHMtESlivZdGLJT4yttT9UnGvbof6Ih2fyogzgFEJYo5Co8xaLvHxcgHlrENq7v0NZ4X8YFY4kumpWFb-bNy6vn"/>
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={imgAbout1}/>
+            </div>
+            <div className="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={imgAbout2}/>
+            </div>
+            <div className="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group hover:shadow-2xl transition-all">
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={imgAbout3}/>
             </div>
           </div>
         </div>

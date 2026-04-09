@@ -1,9 +1,13 @@
 import heroAthlete from '../assets/hero_athlete.png';
 import FaqSection from '../components/FaqSection';
+import imgHome1 from '../assets/home/IMG20260408193423.jpg';
+import imgHome2 from '../assets/home/IMG20260408193607.jpg';
+import imgHome3 from '../assets/home/IMG20260408194051.jpg';
+import imgHome4 from '../assets/home/IMG20260408194209.jpg';
 
 export default function Home() {
-  const whatsappNumber = "1234567890";
-  const phoneNumber = "1234567890";
+  const whatsappNumber = "919019550010";
+  const phoneNumber = "+919019550010";
 
   return (
     <div className="pt-16 md:pt-20">
@@ -21,6 +25,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
+                href={`tel:+919019550010`}
+                className="bg-neutral-900 text-white px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-neutral-800 transition-colors shadow"
+              >
+                <span className="material-symbols-outlined text-base">call</span>
+                Call Now
+              </a>
+              <a
                 href={`https://wa.me/919019550010?text=Hi`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -28,13 +39,6 @@ export default function Home() {
               >
                 <span className="material-symbols-outlined text-green-500 text-base">chat</span>
                 WhatsApp
-              </a>
-              <a
-                href={`tel:+919019550010`}
-                className="bg-neutral-900 text-white px-8 py-4 rounded font-black uppercase tracking-tight flex items-center gap-2 hover:bg-neutral-800 transition-colors shadow"
-              >
-                <span className="material-symbols-outlined text-base">call</span>
-                Call Now
               </a>
             </div>
           </div>
@@ -77,26 +81,42 @@ export default function Home() {
             <h2 className="text-4xl font-black tracking-tighter uppercase">Why Choose Us</h2>
             <div className="w-24 h-1.5 bg-primary mt-4"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-surface-container-low p-8 rounded-xl md:col-span-2 hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-100">
-              <span className="material-symbols-outlined text-4xl text-primary mb-4 p-3 bg-primary/10 rounded-lg inline-block">architecture</span>
-              <h3 className="text-2xl font-bold mb-2">Expert Guidance</h3>
-              <p className="text-on-surface-variant">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-surface-container-low overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-100 flex flex-col">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=500&auto=format&fit=crop" alt="Expert Guidance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-2">Expert Guidance</h3>
+                <p className="text-sm text-on-surface-variant">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-highest p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-200">
-              <span className="material-symbols-outlined text-4xl text-primary mb-4 p-3 bg-primary/10 rounded-lg inline-block" style={{ fontVariationSettings: "'FILL' 1" }}>timer</span>
-              <h3 className="text-2xl font-bold mb-2">24/7 Access</h3>
-              <p className="text-on-surface-variant">Train on your schedule anytime you want with our round-the-clock access.</p>
+            <div className="bg-surface-container-highest overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-200 flex flex-col">
+               <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="24/7 Access" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-2">24/7 Access</h3>
+                <p className="text-sm text-on-surface-variant">Train on your schedule anytime you want with our round-the-clock access.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-high p-8 rounded-xl hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-300">
-              <span className="material-symbols-outlined text-4xl text-primary mb-4 p-3 bg-primary/10 rounded-lg inline-block">nutrition</span>
-              <h3 className="text-2xl font-bold mb-2">Diet Counseling</h3>
-              <p className="text-on-surface-variant">Get the right food plan to grow your muscles and lose fat effectively.</p>
+            <div className="bg-surface-container-high overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-300 flex flex-col">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop" alt="Diet Counseling" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-2">Diet Counseling</h3>
+                <p className="text-sm text-on-surface-variant">Get the right food plan to grow your muscles and lose fat effectively.</p>
+              </div>
             </div>
-            <div className="bg-surface-container-low p-8 rounded-xl md:col-span-2 hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-400">
-              <span className="material-symbols-outlined text-4xl text-primary mb-4 p-3 bg-primary/10 rounded-lg inline-block">groups</span>
-              <h3 className="text-2xl font-bold mb-2">Supportive Community</h3>
-              <p className="text-on-surface-variant">Train with like-minded friends who motivate and support each other every day.</p>
+            <div className="bg-surface-container-low overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-400 flex flex-col">
+              <div className="h-48 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop" alt="Supportive Community" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-bold mb-2">Supportive Community</h3>
+                <p className="text-sm text-on-surface-variant">Train with like-minded friends who motivate and support each other every day.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -144,20 +164,22 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { tag: "Strength Training", icon: "fitness_center" },
-            { tag: "Cardio", icon: "favorite" },
-            { tag: "Cross fit", icon: "monitor_weight" },
-            { tag: "Zumba", icon: "music_note" },
-            { tag: "Dance fitness", icon: "celebration" },
-            { tag: "Kids dance", icon: "child_care" },
-            { tag: "Yoga", icon: "self_improvement" },
-            { tag: "Nutrition and diet", icon: "nutrition" }
+            { tag: "Strength Training", img: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Cardio", img: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Cross fit", img: "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Zumba", img: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Dance fitness", img: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Kids dance", img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Yoga", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Nutrition and diet", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop" }
           ].map((service, idx) => (
-            <div key={idx} className="group bg-surface-container-lowest p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-transform duration-300 flex flex-col items-center text-center animate-fade-up" style={{ animationDelay: `${idx * 100}ms` }}>
-              <div className="w-16 h-16 bg-primary/10 text-primary flex items-center justify-center rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-3xl">{service.icon}</span>
+            <div key={idx} className="group overflow-hidden bg-surface-container-lowest rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-up" style={{ animationDelay: `${idx * 100}ms` }}>
+              <div className="h-32 overflow-hidden relative">
+                <img alt={service.tag} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={service.img} />
               </div>
-              <h3 className="text-xl font-bold uppercase tracking-tighter">{service.tag}</h3>
+              <div className="p-4 text-center">
+                <h3 className="text-sm md:text-base font-bold uppercase tracking-tighter">{service.tag}</h3>
+              </div>
             </div>
           ))}
         </div>
@@ -168,7 +190,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-up">
             <h2 className="text-4xl font-black tracking-tighter uppercase leading-none mb-8">Proven <span className="text-primary">Results.</span></h2>
-            <p className="text-lg text-on-surface-variant mb-8">Our athletes don't just change their look; they re-architect their entire physical potential. Witness the precision of our methodology.</p>
+            <p className="text-lg text-on-surface-variant mb-4">Our athletes don't just change their look; they re-architect their entire physical potential. Witness the precision of our methodology.</p>
+            <p className="text-base text-on-surface-variant font-medium mb-8">We take pride in guiding our members towards a healthier and much stronger lifestyle through consistent workouts and tailored nutritional advice. It's more than fitness; it's a way of living.</p>
             <div className="space-y-8">
               <div className="flex items-center gap-6">
                 <div className="text-6xl font-black text-on-surface">3000+</div>
@@ -182,12 +205,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-4 animate-fade-up delay-200">
             <div className="space-y-4 pt-12">
-              <img alt="Before and after transformation" className="rounded-xl w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKvDi2ZSciXE7LcdhsuA2lMwMejX0p8ClPZCEw0zXNuJOUwgUGxeBezsNseEotG47WMO46TmqI-7MNSJer26gVxdH_VF0iJR02q_wrP6iiIqGivIQgkcFeNoZrfU2p-SDbMUru2rHC7g9vuukbTXpqShL-tFMhwH0EpbN4dGvhE3E-1CVWpsslkWC301JVtlyvsGpIoa_QZginq_TCh62PjjhEjTJf4R2clyeRo2Eb6O_2TUVqpo-YqMD6boxm_pI1cI9M67bgG5tI" />
-              <img alt="Transformation progress" className="rounded-xl w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDQ0jjAQO6dn7rKN0pPyjR7F0QUE0hfZkrFQdIQtAWNEj04Z7LLkuOK2-szpvQZ3ikEBU57hZrZmbYgzQ3FRdNZ8rIsAh8EsWTzs4yck3vg5XdtksCG4MhFsby6Xy9XzIh_jQ2hwrlwMqgdWQ6LPnp9q0sL_xeUot9hBdbmcTJLR7mUqJBpzToQ6Y4RaohlhJAb6dGrk2ot2vO4cqyYMZGCbHJXVWGgoToqAWucAGdfbyjgJorgQsT1D4RDdRnUR6RgDc5w1XdKRN0" />
+              <img alt="Before and after transformation" className="rounded-xl w-full shadow-lg" src={imgHome1} />
+              <img alt="Transformation progress" className="rounded-xl w-full shadow-lg" src={imgHome2} />
             </div>
             <div className="space-y-4">
-              <img alt="Success story" className="rounded-xl w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIZRBo4Y3_E1-xlITsasms0sgBTi2E714gLj9PQ31FQQdYJ7BQ-Dk4WWbdVPb-yoGjqdkbVbnL-jZ1vMj_Qpdgk2KaWFAb8KWsFXqOZTlSm3PC8jaK6-pNtTj9YahKUM_6xi3nwZ6ecNhC2__gOZgPvP_qfhwATHGYoz2W0QBMqEz215nHlzt-eyP8nkkkANoVvUiANIzd2meshxs1QXtka366z5EicXva6m4c1O2z9zZuZMiK6YKkxX0NC7YmOySp8B2TumlyjQ79" />
-              <img alt="Strength results" className="rounded-xl w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmEXOV3aVv5kT_2L47vdipYBU9J50vrgflItVr9wT6ZKNr7LAftCxUN7y7byxaPWNk73LxhtjGBzDQFmoUTeL66AFzFOqJRQ6KOTcs0nccVS6gYvsaDZ7F0Ji5Qw9cgZFP-wIp1SiaXgOS6KUepU0q3ns_SWGvQqA58t8HCL8b09ZcA79ZJAwJloD032Ck8QM9McZqaKYKBt8DurWcHTTU-ppf6ysn8ZtJq9TSvG2pwRjqFK0EFWImyYqpK64UdzxTd0LBcOnamwXh" />
+              <img alt="Success story" className="rounded-xl w-full shadow-lg" src={imgHome3} />
+              <img alt="Strength results" className="rounded-xl w-full shadow-lg" src={imgHome4} />
             </div>
           </div>
         </div>
@@ -253,37 +276,71 @@ export default function Home() {
       </section>
 
       {/* 5.5 FAQs */}
-      <FaqSection faqs={[
-        { question: "What are your gym timings?", answer: "We are open from early morning to late evening. Please check our contact page for exact timings." },
-        { question: "Do you offer a free trial?", answer: "Yes, we offer a free trial session for new members." },
-        { question: "What are your membership fees?", answer: "Our plans are affordable and flexible. Contact us or visit the gym for the latest pricing." },
-        { question: "Is there a separate section for ladies?", answer: "Yes, we provide a comfortable and safe workout space for women." }
-      ]} />
+      <FaqSection />
 
-      {/* 6. Membership Preview (Packages) */}
       <section className="py-16 px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl font-black tracking-tighter uppercase mb-4">Choose Your Tier</h2>
-          <p className="text-on-surface-variant uppercase tracking-widest font-bold text-sm">Investment in your future self</p>
+          <h2 className="text-4xl font-black tracking-tighter uppercase mb-4">Deep Fitness Exclusive Offer</h2>
+          <p className="text-on-surface-variant uppercase tracking-widest font-bold text-sm">Valid for a limited time</p>
         </div>
-        <div className="max-w-md mx-auto">
-          {/* Tier - Combined */}
-          <div className="bg-surface-container-lowest p-10 rounded-2xl flex flex-col items-center text-center ring-4 ring-primary relative scale-105 shadow-2xl animate-fade-up delay-100">
-            <div className="absolute -top-4 bg-primary text-white text-[10px] font-black px-4 py-1 rounded-full uppercase">All-Inclusive</div>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Main Annual Tier */}
+          <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-center text-center ring-4 ring-primary relative scale-105 shadow-2xl animate-fade-up delay-100 z-10 w-full">
+            <div className="absolute -top-4 bg-primary text-white text-[10px] font-black px-4 py-1 rounded-full uppercase">All-Inclusive Bonus</div>
             <div className="text-sm font-black uppercase mb-4 text-primary">Annual Membership</div>
-            <div className="text-5xl font-black mb-8">₹9,600<span className="text-sm font-bold text-outline">/year</span></div>
-            <div className="mb-10"></div>
-            <a href={`https://wa.me/919019550010?text=Hi`} target="_blank" rel="noopener noreferrer" className="w-full py-4 mt-auto bg-primary text-white rounded font-bold uppercase hover:bg-primary-dim transition-colors shadow-lg block">Join Now</a>
+            <div className="text-5xl font-black mb-2">₹9,600</div>
+            <div className="text-sm font-black uppercase text-on-surface mb-6">+ 3 MONTHS FREE</div>
+            <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
+              <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Includes Zumba</p>
+              <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Includes Kids Dance</p>
+            </div>
+            <a href={`https://wa.me/919019550010?text=Hi, I want the Annual Membership offer with 3 months free!`} target="_blank" rel="noopener noreferrer" className="w-full py-4 mt-auto bg-primary text-white rounded font-bold uppercase hover:bg-primary-dim transition-colors shadow-lg block">Join Now</a>
           </div>
+          
+          {/* 6 Months Tier */}
+          <div className="bg-surface-container-highest p-8 rounded-2xl flex flex-col items-center text-center relative shadow-lg animate-fade-up delay-200 mt-0 lg:mt-8 mb-0 lg:mb-8 w-full">
+            <div className="text-sm font-black uppercase mb-4 text-on-surface-variant">6 Months Plan</div>
+            <div className="text-3xl font-black mb-2">Get 6 Months</div>
+            <div className="text-sm font-black uppercase text-primary mb-6">+ 2 M FREE</div>
+            <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
+              <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Full Gym Access</p>
+            </div>
+            <a href={`https://wa.me/919019550010?text=Hi, I want the 6 Months offer!`} target="_blank" rel="noopener noreferrer" className="w-full py-4 mt-auto bg-surface-container-lowest border border-outline-variant text-on-surface rounded font-bold uppercase hover:bg-surface-container transition-colors block">Select Plan</a>
+          </div>
+
+          {/* 3 Months Tier */}
+          <div className="bg-surface-container-highest p-8 rounded-2xl flex flex-col items-center text-center relative shadow-lg animate-fade-up delay-300 mt-0 lg:mt-8 mb-0 lg:mb-8 w-full">
+            <div className="text-sm font-black uppercase mb-4 text-on-surface-variant">3 Months Plan</div>
+            <div className="text-3xl font-black mb-2">Get 3 Months</div>
+            <div className="text-sm font-black uppercase text-primary mb-6">+ 1 M FREE</div>
+            <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
+              <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Full Gym Access</p>
+            </div>
+            <a href={`https://wa.me/919019550010?text=Hi, I want the 3 Months offer!`} target="_blank" rel="noopener noreferrer" className="w-full py-4 mt-auto bg-surface-container-lowest border border-outline-variant text-on-surface rounded font-bold uppercase hover:bg-surface-container transition-colors block">Select Plan</a>
+          </div>
+        </div>
+        <div className="text-center mt-12 animate-fade-up delay-400">
+           <div className="inline-block bg-primary text-on-primary px-6 py-3 rounded-xl shadow font-black uppercase tracking-tight text-lg border-2 border-yellow-300">
+              🔥 SPECIAL: BUY 2 ANNUAL PACKS & GET 1 FREE MEMBERSHIP! 🔥
+           </div>
         </div>
       </section>
 
       {/* 7. Location Map */}
       <section className="py-16 px-8 bg-surface-container-high">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1 animate-fade-up delay-100">
+          <div className="order-2 lg:order-1 animate-fade-up delay-100 w-full md:w-[90%] mx-auto lg:w-full">
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[450px]">
-              <img alt="Gym location map" className="w-full h-full object-cover grayscale opacity-90 contrast-125 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPr2FvdSoz4Y0UwMGDfpPiZfay__7ZRLAGB0bTIHH8QaUbTJ_Ak0ZKuMVGcL8ddlo7EyMnZ1_T5F2dshTmSo0WZ_f8aoKTCzNgdbCJh1kgIDj0gYNuUuTF6L1qXvxKqmsNi9Mbrjyh7j33546cjHayVKb9tmVd79zSHtSCGfoElDSWSF4hDhVDXpsiIc-z6Lb9jJ5x-xUASWnTzJHadv8K61wpqPjvN08jC5ObTnQIY0LTUlSA3YeSioN1oNK1_30LIvfu03f4S6-1" />
+              <iframe 
+                title="Gym Google Map"
+                src="https://maps.google.com/maps?q=Deep%20Fitness,%20Mysuru&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div className="order-1 lg:order-2 animate-fade-up">
@@ -295,7 +352,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="text-xs font-black uppercase text-primary tracking-widest mb-2">Hours</div>
-                <p className="text-xl font-bold">all day 6am to 9pm only</p>
+                <p className="text-xl font-bold">All day 5.30am to 10pm</p>
               </div>
               <div className="pt-4">
                 <button 

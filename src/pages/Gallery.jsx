@@ -1,4 +1,10 @@
 import FaqSection from '../components/FaqSection';
+import imgGallery1 from '../assets/gallery/IMG20260408190421.jpg';
+import imgGallery2 from '../assets/gallery/IMG20260408193205.jpg';
+import imgGallery3 from '../assets/gallery/IMG20260408194209.jpg';
+import imgGallery4 from '../assets/gallery/IMG20260408194412.jpg';
+import imgGallery5 from '../assets/gallery/IMG20260408194414.jpg';
+import vidGallery6 from '../assets/gallery/VID20260408194844.mp4';
 
 export default function Gallery() {
   return (
@@ -163,22 +169,22 @@ export default function Gallery() {
           {/* using columns-1 md:columns-2 lg:columns-3 for masonry effect in tailwind */}
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
             <div className="break-inside-avoid animate-fade-up delay-100">
-              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmiOWUlnJne5IdU_w5UsKEVGZYuv0jr8rv2zhtYWgy1zwEDIvFIShJ_xPGTzdEv37pKrN2oMMrsLVJ49b0fpZ_4VST6LmHYGLEdedwNw8hLrVPq_vMOQSd2Pj1xSWSvvIS18TbuvyKztHyuemydULI4IS9lwxhI1-xQOHU6ycMyoHf0K6TcBF--T_iUBY6xNWh6ufBCLueW41r--CsxZz9arXu39wQuIjo-YnhZd0KVb05MhQ1aTWhkrccHMqcBjK9vG8AW-SC52RP"/>
+              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src={imgGallery1}/>
             </div>
             <div className="break-inside-avoid animate-fade-up delay-200">
-              <img className="w-full rounded shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBafBWBKgpcg02WPMkq97jIJ9snIJ0K-ZM5SPMwwLZxH-n2cTDatMsqxAgsMmZAIEEl6XQgG8gKCPi1D68h0OfX0zZu_01_l7XCYMruZUkQJLxJVXfUeH7yBe9ErjqCVu5OfhGK7dPGypiTXi1N_5QHQFqARi8ba15oEzL6IMVAsJD0-WlsBsKbrreag8fOVAfMSC2VajRW6T25Ta8R4sowiVRwqy67w-T5BYss6zVe0mL038ztBPhwW2FRLWuArGFN1HQcf4V5NGNF"/>
+              <img className="w-full rounded shadow-xl" src={imgGallery2}/>
             </div>
             <div className="break-inside-avoid animate-fade-up delay-300">
-              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_R2VQ1l5AVW3ucp9lpntEfHzOztdaNpGzENJfIWHwaH7tPMQLFJc372RtMQ1UnxQPNwAbyaF9Rq00sWI2BFq3ESxZlvLqNwb4YliLUzKRZgVKcPEYhRkq492nVt5ubtcfGdR-miAFBVORVkHJsjjEm_K2FPW1hK48jS1U7BmL4p_MiJo3zb0jbjrfmhtVuPAFgl_LnZCj5vdLLwaba2aQhEsvQOEh6V_o4LSUKThuozWMUuIDIoPeyioVXAjHJ-za4yj7MYjTHEZA"/>
+              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src={imgGallery3}/>
             </div>
             <div className="break-inside-avoid animate-fade-up delay-100">
-              <img className="w-full rounded shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJqG00O3Am0Y5uQyp0rBV6E2fYWP2rk1Tr-qT0qkWKQzb_OE7RuEWxXDd1E8J7CdVlZzVpI1rPRCmI0BqfxgmfaeU8owESfO4WT6BZHz0eNDkzGkwA2RkjK15eB2y3N4GEn2Fsypsu7Rp1pyjjSWkCEaZv8ddZ6XbU7vf6X-cvmoTPyXWvdpCB83xgzkiImholQWdkjTmC2betxcSVFhi0B2wJZwuSEsrWePFaPBTL54umc4U2K_oeYNvcQiRaWzZ2BUn0kdJizZPZ"/>
+              <img className="w-full rounded shadow-xl" src={imgGallery4}/>
             </div>
             <div className="break-inside-avoid animate-fade-up delay-200">
-              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zU-oVnT8V6v-8FUcUVgDj-fDTdyMRGqzoZhMiL-bOlYMvcb4rDLflr01eGjd3sCeIPZoKt7qvnqnLPA9H2ciIOMpXPTheDMfxY1wBBnzgptHk9aMcgBXjX2UaYtXuiB4tHVe0y6RyvzjhpdWWyW9Nli6EIhw2WVyR1MzLj3exk2TWli_ivcl5JnW7vTZLbVpb98dYWL79uhQCeI1hTyWiwwxdT54kAiYpNHWM1cN0eAkkLXHtmK8UBM96XNGEhQOaOb9lOFwiWGj"/>
+              <img className="w-full rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700" src={imgGallery5}/>
             </div>
             <div className="break-inside-avoid animate-fade-up delay-300">
-              <img className="w-full rounded shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAQFme5PIESH2oqvxCTXOfDQ1YqA1qLIcZkZC5iK3DNTs27W9zbmO0D32YWP-bmjosnSEzhIGU9tv5ccSDUWQKuKc12wo7CTi0oyHRedoKV-6ebdSzpyt5bZSYC4JdX_wytsYLFQnvKU-_vi5iejtU8tma-ELAaiNEgujirIs3-hneWhw-QtYlm3lGJNvk4LkYvxZtZN89pL2ITsig5N9Eaa-Qttqd8jTTjajfYm_GqYYmuHGk-acTW1WFrS7DqvmFRS5Fkp9MS5JX"/>
+              <video className="w-full rounded shadow-xl" src={vidGallery6} autoPlay loop muted playsInline />
             </div>
           </div>
         </div>

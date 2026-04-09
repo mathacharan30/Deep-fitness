@@ -11,7 +11,7 @@ export default function Navbar() {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'Trainers' },
-    { to: '/services', label: 'Services' },
+    { to: '/services', label: 'Programs' },
     { to: '/gallery', label: 'Transformations' },
     { to: '/contact', label: 'Contact' },
   ];
@@ -30,7 +30,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 -ml-2 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
-          <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+          <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-neutral-900 rounded-lg p-1">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl md:text-2xl font-black italic tracking-tighter text-neutral-900 uppercase">

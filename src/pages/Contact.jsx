@@ -20,7 +20,6 @@ export default function Contact() {
       <section className="pt-12 md:pt-20 pb-8 md:pb-16 px-6 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 animate-fade-up delay-100 mt-4 md:mt-0">
-            <span className="inline-block px-4 py-1 bg-primary-container text-on-primary-container text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase rounded-full">Precision Performance</span>
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface">
               Let’s Start <br/>Your Fitness <br/><span className="text-primary bg-surface-container-high px-4 py-1 mt-2 inline-block rounded-lg">Journey</span>
             </h1>
@@ -50,7 +49,7 @@ export default function Contact() {
       <section className="bg-surface-container-low py-16 px-8">
         <div className="max-w-5xl mx-auto">
           <div className="space-y-4 text-center mb-16 animate-fade-up">
-            <h2 className="text-4xl font-black tracking-tighter uppercase">Direct Access</h2>
+            <h2 className="text-4xl font-black tracking-tighter uppercase">Reach us out</h2>
             <div className="h-1 w-24 bg-primary mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-fade-up delay-100">
@@ -59,9 +58,9 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">call</span>
               </div>
               <div>
-                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Telephone</p>
+                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Call us</p>
                 <p className="text-xl font-bold">+91 90195 50010</p>
-                <p className="text-sm text-on-surface-variant">Mon-Fri 6:00 - 22:00</p>
+                <p className="text-sm text-on-surface-variant">Mon-Sun 6am to 11pm</p>
               </div>
             </div>
             <div className="group flex flex-col items-center text-center gap-6 cursor-pointer" onClick={() => window.open('mailto:deepfitnessgym2025@gmail.com')}>
@@ -69,7 +68,7 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-on-surface text-2xl group-hover:text-on-primary-fixed">mail</span>
               </div>
               <div>
-                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Electronic Mail</p>
+                <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-1">Mail us @</p>
                 <p className="text-xl font-bold">deepfitnessgym2025@gmail.com</p>
                 <p className="text-sm text-on-surface-variant">24/7 Response Guaranteed</p>
               </div>
@@ -85,32 +84,19 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="pt-8 text-center animate-fade-up delay-200">
-            <p className="text-xs font-black uppercase tracking-widest text-on-surface-variant mb-6">Social Integration</p>
-            <div className="flex gap-4 justify-center">
-              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                <span className="material-symbols-outlined">share</span>
-              </a>
-              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                <span className="material-symbols-outlined">public</span>
-              </a>
-              <a className="w-12 h-12 bg-surface-container-highest text-on-surface rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
-                <span className="material-symbols-outlined">podcasts</span>
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Map Section */}
       <section className="h-[600px] relative overflow-hidden group">
+        <a href="https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30 cursor-pointer block"></a>
         <div className="absolute inset-0 bg-[#121212]/40 z-10 transition-opacity group-hover:opacity-20 pointer-events-none"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none animate-fade-up">
-          <div className="bg-surface p-8 rounded-xl shadow-2xl space-y-4 max-w-sm pointer-events-auto border-b-4 border-primary">
+          <div className="bg-surface p-8 rounded-xl shadow-2xl space-y-4 max-w-sm border-b-4 border-primary">
             <h3 className="text-2xl font-black uppercase tracking-tighter">Our Facility</h3>
             <p className="text-sm text-on-surface-variant">Visit our elite training facility in the heart of the city.</p>
             <button className="w-full bg-primary-fixed text-on-primary-fixed font-black uppercase text-xs py-3 rounded hover:bg-primary transition-colors flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined text-sm">near_me</span> Get Directions
+              <span className="material-symbols-outlined text-sm">near_me</span> Click Map for Directions
             </button>
           </div>
         </div>
@@ -122,17 +108,18 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto text-center animate-fade-up border border-surface-container-highest p-8 rounded-xl shadow-sm">
           <h3 className="text-2xl font-black uppercase mb-4">Still have questions?</h3>
           <p className="text-on-surface-variant mb-6">We're always here to help you get started on your fitness journey.</p>
-          <div className="flex justify-center gap-4">
-            <button className="bg-primary text-on-primary font-bold uppercase px-6 py-3 rounded shadow hover:bg-primary-dim transition-colors" onClick={handleCall}>Call Now</button>
-            <button className="bg-surface-container-highest font-bold uppercase px-6 py-3 rounded shadow hover:bg-surface-container transition-colors" onClick={handleWhatsApp}>WhatsApp Us</button>
+          <div className="flex flex-col justify-center gap-4 w-full max-w-xs mx-auto">
+            <button className="w-full bg-primary text-on-primary font-bold uppercase px-6 py-4 rounded shadow hover:bg-primary-dim transition-colors flex items-center justify-center gap-2" onClick={handleCall}>
+              <span className="material-symbols-outlined">call</span> Call Now
+            </button>
+            <button className="w-full bg-surface-container-highest font-bold uppercase px-6 py-4 rounded shadow hover:bg-surface-container transition-colors flex items-center justify-center gap-2" onClick={handleWhatsApp}>
+              <span className="material-symbols-outlined text-green-500">chat</span> WhatsApp Us
+            </button>
           </div>
         </div>
       </section>
       
-      <FaqSection faqs={[
-        { question: "Do you have locker facilities?", answer: "Yes, lockers are available for members." },
-        { question: "Can I pause my membership?", answer: "Yes, membership pause options are available under certain conditions." }
-      ]} />
+      <FaqSection />
     </div>
   );
 }

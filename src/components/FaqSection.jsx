@@ -1,8 +1,20 @@
 import { useState } from 'react';
 
-export default function FaqSection({ faqs = [] }) {
+export default function FaqSection() {
+  const defaultFaqs = [
+    { question: "What are your gym timings?", answer: "We are open from 5:30 am to 10:00 pm. Please check our contact page for exact timings." },
+    { question: "Do you offer a free trial?", answer: "Yes, we offer a 3-day free trial session for new members." },
+    { question: "What are your membership fees?", answer: "Our plans are affordable and flexible. Contact us or visit the gym for the latest pricing." },
+    { question: "Is there a separate section for ladies?", answer: "Yes, we provide a comfortable and safe workout space for women." },
+    { question: "Do you have personal trainers?", answer: "Yes, certified trainers are available for personal training sessions." },
+    { question: "What equipment do you have?", answer: "We have modern cardio machines, weight training equipment, and functional fitness tools." },
+    { question: "Do you provide diet plans?", answer: "Yes, we offer basic diet guidance and customized plans through our trainers." },
+    { question: "Do you offer group classes?", answer: "Yes, we offer Zumba, Kids Dance, Yoga, and other programs." }
+  ];
+  
   const [openIndex, setOpenIndex] = useState(null);
 
+  const faqs = defaultFaqs;
   if (!faqs || faqs.length === 0) return null;
 
   return (
