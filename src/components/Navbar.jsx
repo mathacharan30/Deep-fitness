@@ -30,13 +30,10 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
-          <div className="w-14 h-14 md:w-16 md:h-16 bg-neutral-900 rounded-xl flex items-center justify-center p-0.5 flex-shrink-0">
+          <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-neutral-900 rounded-xl flex items-center justify-center p-0.5 flex-shrink-0">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-lg md:text-xl font-black tracking-tighter text-neutral-900 uppercase">Deep Fitness</span>
-            <span className="text-[9px] font-bold tracking-widest text-neutral-400 uppercase">Transform · Achieve · Excel</span>
-          </div>
+          <span className="text-xl md:text-2xl font-black tracking-tighter text-neutral-900 uppercase">Deep Fitness</span>
         </Link>
 
         {/* Desktop Links */}

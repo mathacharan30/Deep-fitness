@@ -91,12 +91,12 @@ export default function About() {
               { title: "Diet Counseling", desc: "Get the right food plan to grow your muscles and lose fat effectively.", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop", delay: "delay-300" },
               { title: "Supportive Community", desc: "Train with like-minded friends who motivate and support each other every day.", img: "https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop", delay: "delay-400" },
             ].map((item, idx) => (
-              <div key={idx} className={`bg-surface-container-low overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up ${item.delay} flex flex-col group`}>
-                <div className="h-48 overflow-hidden relative">
+              <div key={idx} className={`overflow-hidden rounded-2xl transition-all hover:-translate-y-2 duration-300 animate-fade-up ${item.delay} flex flex-col group shadow-lg`}>
+                <div className="h-56 overflow-hidden relative">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 flex-1">
-                  <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">{item.title}</h3>
+                <div className="p-5 bg-surface-container-high flex-1">
+                  <h3 className="text-lg font-black mb-2 uppercase tracking-tight text-on-surface">{item.title}</h3>
                   <p className="text-sm text-on-surface-variant leading-relaxed">{item.desc}</p>
                 </div>
               </div>

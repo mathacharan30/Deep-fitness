@@ -34,8 +34,8 @@ export default function Services() {
             { title: 'Strength Training', icon: 'fitness_center', img: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500&auto=format&fit=crop' },
             { title: 'Cardio', icon: 'monitor_heart', img: 'https://images.unsplash.com/photo-1723117418780-1b74b25af9bc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyZGlvfGVufDB8fDB8fHww' },
             { title: 'Cross Fit', icon: 'run_circle', img: 'https://images.unsplash.com/photo-1434596922112-19c563067271?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-            { title: 'Zumba', icon: 'music_note', img: 'https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8enVtYmF8ZW58MHx8MHx8fDA%3D' },
-            { title: 'Dance Fitness', icon: 'star', img: 'https://plus.unsplash.com/premium_photo-1685202713650-1d47f320a7b9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzcyUyMGRhbmNlfGVufDB8fDB8fHww' },
+            { title: 'Zumba', icon: 'music_note', img: 'https://images.unsplash.com/photo-1619107372089-9b05ed524774?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8enVtYmElMjBmaXRuZXNzfGVufDB8fDB8fHww' },
+            { title: 'Dance Fitness', icon: 'star', img: 'https://images.pexels.com/photos/7894541/pexels-photo-7894541.jpeg?cs=srgb&dl=pexels-mart-production-7894541.jpg&fm=jpg' },
             { title: 'Kids Dance', icon: 'child_care', img: 'https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGRhbmNpbmd8ZW58MHx8MHx8fDA%3D' },
             { title: 'Yoga', icon: 'self_improvement', img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop' },
             { title: 'Nutrition & Diet', icon: 'restaurant', img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop' }

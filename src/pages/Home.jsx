@@ -88,12 +88,12 @@ export default function Home() {
               { title: "Diet Counseling", desc: "Get the right food plan to grow your muscles and lose fat effectively.", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop", delay: "delay-300" },
               { title: "Supportive Community", desc: "Train with like-minded friends who motivate and support each other every day.", img: "https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop", delay: "delay-400" },
             ].map((item, idx) => (
-              <div key={idx} className={`bg-surface-container-low overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up ${item.delay} flex flex-col group`}>
-                <div className="h-48 overflow-hidden relative">
+              <div key={idx} className={`overflow-hidden rounded-2xl transition-all hover:-translate-y-2 duration-300 animate-fade-up ${item.delay} flex flex-col group shadow-lg`}>
+                <div className="h-56 overflow-hidden relative">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 flex-1">
-                  <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">{item.title}</h3>
+                <div className="p-5 bg-surface-container-high flex-1">
+                  <h3 className="text-lg font-black mb-2 uppercase tracking-tight text-on-surface">{item.title}</h3>
                   <p className="text-sm text-on-surface-variant leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -147,8 +147,8 @@ export default function Home() {
             { tag: "Strength Training", img: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500&auto=format&fit=crop" },
             { tag: "Cardio", img: "https://images.unsplash.com/photo-1723117418780-1b74b25af9bc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyZGlvfGVufDB8fDB8fHww" },
             { tag: "Cross fit", img: "https://images.unsplash.com/photo-1434596922112-19c563067271?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-            { tag: "Zumba", img: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8enVtYmF8ZW58MHx8MHx8fDA%3D" },
-            { tag: "Dance fitness", img: "https://plus.unsplash.com/premium_photo-1685202713650-1d47f320a7b9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzcyUyMGRhbmNlfGVufDB8fDB8fHww" },
+            { tag: "Zumba", img: "https://images.unsplash.com/photo-1619107372089-9b05ed524774?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8enVtYmElMjBmaXRuZXNzfGVufDB8fDB8fHww" },
+            { tag: "Dance fitness", img: "https://images.pexels.com/photos/7894541/pexels-photo-7894541.jpeg?cs=srgb&dl=pexels-mart-production-7894541.jpg&fm=jpg" },
             { tag: "Kids dance", img: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGRhbmNpbmd8ZW58MHx8MHx8fDA%3D" },
             { tag: "Yoga", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop" },
             { tag: "Nutrition and diet", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop" }
