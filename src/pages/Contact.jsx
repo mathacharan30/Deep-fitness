@@ -87,20 +87,46 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="h-[600px] relative overflow-hidden group">
-        <a href="https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30 cursor-pointer block"></a>
-        <div className="absolute inset-0 bg-[#121212]/40 z-10 transition-opacity group-hover:opacity-20 pointer-events-none"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none animate-fade-up">
-          <div className="bg-surface p-8 rounded-xl shadow-2xl space-y-4 max-w-sm border-b-4 border-primary">
-            <h3 className="text-2xl font-black uppercase tracking-tighter">Our Facility</h3>
-            <p className="text-sm text-on-surface-variant">Visit our elite training facility in the heart of the city.</p>
-            <button className="w-full bg-primary-fixed text-on-primary-fixed font-black uppercase text-xs py-3 rounded hover:bg-primary transition-colors flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined text-sm">near_me</span> Click Map for Directions
-            </button>
+      {/* 7. Location Map */}
+      <section className="py-16 px-8 bg-surface-container-high">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1 animate-fade-up delay-100 w-full md:w-[90%] mx-auto lg:w-full">
+            <div className="rounded-3xl overflow-hidden shadow-2xl h-[450px]">
+              <iframe 
+                title="Gym Google Map"
+                src="https://maps.google.com/maps?q=Deep%20Fitness,%20Mysuru&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2 animate-fade-up">
+            <h2 className="text-4xl font-black tracking-tighter uppercase mb-6">Our Facility</h2>
+            <div className="space-y-8">
+              <div>
+                <div className="text-xs font-black uppercase text-primary tracking-widest mb-2">Location</div>
+                <p className="text-xl font-bold">208, HUN Complex, TK Layout, <br />New Kantharaj Urs Rd, Mysuru 570009</p>
+              </div>
+              <div>
+                <div className="text-xs font-black uppercase text-primary tracking-widest mb-2">Hours</div>
+                <p className="text-xl font-bold">All day 5.30am to 10pm</p>
+              </div>
+              <div className="pt-4">
+                <button 
+                  onClick={() => window.open('https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19')}
+                  className="bg-surface-container-highest text-on-surface px-8 py-4 rounded font-black uppercase flex items-center gap-2 hover:scale-105 transition-transform shadow-lg"
+                >
+                  <span className="material-symbols-outlined">directions</span>
+                  Get Directions
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <img alt="Location Map" className="w-full h-full object-cover grayscale brightness-90 transition-transform duration-1000 group-hover:scale-105" data-alt="High-contrast grey map of Mysuru location" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sCxCUnj7cBF6tvgT820NuxcJ5m7-kSGC2W_IWsHsWqLRtiWZ8pCQIXv_FvXGmoEzjIzU3Xt6jYm0OPkxJ6M65p6zxSku-nOv7Is_uurLr79ndoESqhrioqctmwMlYyVgcXwjh0goJj5mW1F1erc2kUxt3v4WBfa1TqOhCseqJM5w9T61eddoZhD7TK6Rk1i1vfNzcUk1wzA-hFcbhtrmvnB_x-b0ZZJFJ9YOyFUZ4-e6Mvhth8X5Kt2etcBzcxa5LLpCh8YZ7GeF"/>
       </section>
 
       {/* Simple Contact Banner */}

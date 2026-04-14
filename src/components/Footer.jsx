@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-primary mb-6">Location</div>
           <ul className="space-y-4">
             <li><a href="https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19" target="_blank" rel="noopener noreferrer" className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-on-surface-variant hover:text-white transition-colors block">208, HUN Complex, Mysuru</a></li>
-            <li><p className="font-['Space_Grotesk'] text-[10px] font-medium tracking-widest uppercase text-neutral-600">Shardhadevi nagar circle, New Kantharaj Urs Rd, TK Layout, Mysuru, Karnataka 570009</p></li>
+            <li><p className="font-['Space_Grotesk'] text-[10px] font-medium tracking-widest uppercase text-[lightgrey]">Shardhadevi nagar circle, New Kantharaj Urs Rd, TK Layout, Mysuru, Karnataka 570009</p></li>
           </ul>
         </div>
         
@@ -43,7 +43,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-neutral-200/10 text-center pb-20 md:pb-0">
         <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400">© 2026 DEEP FITNESS.</div>
-        <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400 mt-2">Developed by <a href="https://www.devlofttech.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-600 font-bold hover:text-primary transition-colors">Devloft Technologies</a></div>
+        <div className="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-neutral-400 mt-2">Developed by <a href="https://www.devlofttech.com/" target="_blank" rel="noopener noreferrer" className="text-[#ffff00] font-bold hover:text-yellow-400 transition-colors">Devloft Technologies</a></div>
       </div>
     </footer>
   );

@@ -1,9 +1,9 @@
 import heroAthlete from '../assets/hero_athlete.png';
 import FaqSection from '../components/FaqSection';
-import imgHome1 from '../assets/home/IMG20260408193423.jpg';
+import imgHome1 from '../assets/home/IMG20260408193301.jpg';
 import imgHome2 from '../assets/home/IMG20260408193607.jpg';
-import imgHome3 from '../assets/home/IMG20260408194051.jpg';
-import imgHome4 from '../assets/home/IMG20260408194209.jpg';
+import imgHome3 from '../assets/home/IMG20260408194209.jpg';
+import imgHome4 from '../assets/home/IMG20260408194359.jpg';
 
 export default function Home() {
   const whatsappNumber = "919019550010";
@@ -82,42 +82,22 @@ export default function Home() {
             <div className="w-24 h-1.5 bg-primary mt-4"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-surface-container-low overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-100 flex flex-col">
-              <div className="h-48 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=500&auto=format&fit=crop" alt="Expert Guidance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            {[
+              { title: "Expert Guidance", desc: "We provide personalized training plans to help you reach your goals safely and efficiently.", img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=500&auto=format&fit=crop", delay: "delay-100" },
+              { title: "24/7 Access", desc: "Train on your schedule anytime you want with our round-the-clock access.", img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop", delay: "delay-200" },
+              { title: "Diet Counseling", desc: "Get the right food plan to grow your muscles and lose fat effectively.", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop", delay: "delay-300" },
+              { title: "Supportive Community", desc: "Train with like-minded friends who motivate and support each other every day.", img: "https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop", delay: "delay-400" },
+            ].map((item, idx) => (
+              <div key={idx} className={`bg-surface-container-low overflow-hidden rounded-xl transition-transform hover:-translate-y-2 duration-300 animate-fade-up ${item.delay} flex flex-col group`}>
+                <div className="h-48 overflow-hidden relative">
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="p-6 flex-1">
+                  <h3 className="text-xl font-bold mb-4 uppercase tracking-tight">{item.title}</h3>
+                  <p className="text-sm text-on-surface-variant leading-relaxed">{item.desc}</p>
+                </div>
               </div>
-              <div className="p-6 flex-1">
-                <h3 className="text-xl font-bold mb-2">Expert Guidance</h3>
-                <p className="text-sm text-on-surface-variant">We provide personalized training plans to help you reach your goals safely and efficiently.</p>
-              </div>
-            </div>
-            <div className="bg-surface-container-highest overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-200 flex flex-col">
-               <div className="h-48 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="24/7 Access" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-6 flex-1">
-                <h3 className="text-xl font-bold mb-2">24/7 Access</h3>
-                <p className="text-sm text-on-surface-variant">Train on your schedule anytime you want with our round-the-clock access.</p>
-              </div>
-            </div>
-            <div className="bg-surface-container-high overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-300 flex flex-col">
-              <div className="h-48 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=500&auto=format&fit=crop" alt="Diet Counseling" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-6 flex-1">
-                <h3 className="text-xl font-bold mb-2">Diet Counseling</h3>
-                <p className="text-sm text-on-surface-variant">Get the right food plan to grow your muscles and lose fat effectively.</p>
-              </div>
-            </div>
-            <div className="bg-surface-container-low overflow-hidden rounded-xl group hover:-translate-y-1 transition-transform duration-300 animate-fade-up delay-400 flex flex-col">
-              <div className="h-48 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=500&auto=format&fit=crop" alt="Supportive Community" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-6 flex-1">
-                <h3 className="text-xl font-bold mb-2">Supportive Community</h3>
-                <p className="text-sm text-on-surface-variant">Train with like-minded friends who motivate and support each other every day.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -162,23 +142,23 @@ export default function Home() {
           <h2 className="text-4xl font-black uppercase tracking-tight mb-2">Our Services</h2>
           <div className="h-1 w-24 bg-primary mt-2"></div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { tag: "Strength Training", img: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500&auto=format&fit=crop" },
-            { tag: "Cardio", img: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=500&auto=format&fit=crop" },
-            { tag: "Cross fit", img: "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=500&auto=format&fit=crop" },
-            { tag: "Zumba", img: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=500&auto=format&fit=crop" },
-            { tag: "Dance fitness", img: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=500&auto=format&fit=crop" },
-            { tag: "Kids dance", img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=500&auto=format&fit=crop" },
+            { tag: "Cardio", img: "https://images.unsplash.com/photo-1723117418780-1b74b25af9bc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyZGlvfGVufDB8fDB8fHww" },
+            { tag: "Cross fit", img: "https://images.unsplash.com/photo-1434596922112-19c563067271?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { tag: "Zumba", img: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8enVtYmF8ZW58MHx8MHx8fDA%3D" },
+            { tag: "Dance fitness", img: "https://plus.unsplash.com/premium_photo-1685202713650-1d47f320a7b9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzcyUyMGRhbmNlfGVufDB8fDB8fHww" },
+            { tag: "Kids dance", img: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGRhbmNpbmd8ZW58MHx8MHx8fDA%3D" },
             { tag: "Yoga", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop" },
             { tag: "Nutrition and diet", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop" }
           ].map((service, idx) => (
-            <div key={idx} className="group overflow-hidden bg-surface-container-lowest rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-up" style={{ animationDelay: `${idx * 100}ms` }}>
-              <div className="h-32 overflow-hidden relative">
+            <div key={idx} className="group bg-surface-container-lowest overflow-hidden flex flex-col rounded-xl hover:shadow-2xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${idx * 50}ms` }}>
+              <div className="h-48 overflow-hidden relative">
                 <img alt={service.tag} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={service.img} />
               </div>
-              <div className="p-4 text-center">
-                <h3 className="text-sm md:text-base font-bold uppercase tracking-tighter">{service.tag}</h3>
+              <div className="p-6 flex-1 flex flex-col items-center justify-center text-center relative z-10 bg-surface-container-lowest">
+                <h3 className="text-xl font-bold uppercase tracking-tighter">{service.tag}</h3>
               </div>
             </div>
           ))}
@@ -223,48 +203,48 @@ export default function Home() {
             <h2 className="text-4xl font-black tracking-tighter uppercase max-w-md">Voices of the Elite Community</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-100">
+            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-100 flex flex-col">
               <span className="material-symbols-outlined text-primary-container text-6xl absolute top-4 right-8 opacity-40">format_quote</span>
               <div className="flex text-yellow-500 mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <span key={star} className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                  <span key={star} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 ))}
               </div>
-              <p className="text-lg font-medium italic mb-8 relative z-10">"I joined this institute a year ago and have seen great results in Zumba. They recently added a gym area, and the ambiance is both elegant and welcoming. Please join us!"</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant">S</div>
+              <p className="text-lg font-medium italic mb-8 relative z-10 flex-1">"I joined this institute a year ago and have seen great results in Zumba. They recently added a gym area, and the ambiance is both elegant and welcoming. Please join us!"</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant flex-shrink-0">S</div>
                 <div>
                   <div className="font-black text-sm uppercase">Sinchana Rajesh</div>
                   <div className="text-[10px] uppercase font-bold text-outline">4 weeks ago</div>
                 </div>
               </div>
             </div>
-            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-200">
+            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-200 flex flex-col">
               <span className="material-symbols-outlined text-primary-container text-6xl absolute top-4 right-8 opacity-40">format_quote</span>
               <div className="flex text-yellow-500 mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <span key={star} className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                  <span key={star} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 ))}
               </div>
-              <p className="text-lg font-medium italic mb-8 relative z-10">"You can expect a complete fitness transformation here if you stay focused while on the gym floor."</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant">M</div>
+              <p className="text-lg font-medium italic mb-8 relative z-10 flex-1">"You can expect a complete fitness transformation here if you stay focused while on the gym floor."</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant flex-shrink-0">M</div>
                 <div>
                   <div className="font-black text-sm uppercase">Mithun Shravan</div>
                   <div className="text-[10px] uppercase font-bold text-outline">2 years ago</div>
                 </div>
               </div>
             </div>
-            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-300">
+            <div className="bg-surface-container-lowest p-8 rounded-2xl relative shadow-md hover:-translate-y-2 transition-transform duration-300 animate-fade-up delay-300 flex flex-col">
               <span className="material-symbols-outlined text-primary-container text-6xl absolute top-4 right-8 opacity-40">format_quote</span>
               <div className="flex text-yellow-500 mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <span key={star} className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                  <span key={star} className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 ))}
               </div>
-              <p className="text-lg font-medium italic mb-8 relative z-10">"Deep Fitness is warm and welcoming to all. Despite my initial nerves about dancing in public, Arjun Sir's amazing instruction put me completely at ease. I'm so glad I started dance classes here!"</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-purple-700 flex items-center justify-center font-bold text-white">B</div>
+              <p className="text-lg font-medium italic mb-8 relative z-10 flex-1">"Deep Fitness is warm and welcoming to all. Despite my initial nerves about dancing in public, Arjun Sir's amazing instruction put me completely at ease. I'm so glad I started dance classes here!"</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-purple-700 flex items-center justify-center font-bold text-white flex-shrink-0">B</div>
                 <div>
                   <div className="font-black text-sm uppercase">BHANU BHAVATH RAO</div>
                   <div className="text-[10px] uppercase font-bold text-outline">2 years ago</div>
@@ -296,7 +276,7 @@ export default function Home() {
             </div>
             <a href={`https://wa.me/919019550010?text=Hi, I want the Annual Membership offer with 3 months free!`} target="_blank" rel="noopener noreferrer" className="w-full py-4 mt-auto bg-primary text-white rounded font-bold uppercase hover:bg-primary-dim transition-colors shadow-lg block">Join Now</a>
           </div>
-          
+
           {/* 6 Months Tier */}
           <div className="bg-surface-container-highest p-8 rounded-2xl flex flex-col items-center text-center relative shadow-lg animate-fade-up delay-200 mt-0 lg:mt-8 mb-0 lg:mb-8 w-full">
             <div className="text-sm font-black uppercase mb-4 text-on-surface-variant">6 Months Plan</div>
@@ -320,9 +300,9 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center mt-12 animate-fade-up delay-400">
-           <div className="inline-block bg-primary text-on-primary px-6 py-3 rounded-xl shadow font-black uppercase tracking-tight text-lg border-2 border-yellow-300">
-              🔥 SPECIAL: BUY 2 ANNUAL PACKS & GET 1 FREE MEMBERSHIP! 🔥
-           </div>
+          <a href="https://wa.me/919019550010?text=Hi,%20I%20am%20interested%20in%20the%20Buy%202%20Annual%20Packs%20and%20Get%201%20Free%20offer!" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-on-primary px-6 py-3 rounded-xl shadow font-black uppercase tracking-tight text-lg border-2 border-yellow-300 hover:scale-105 transition-transform cursor-pointer">
+            🔥 SPECIAL: BUY 2 ANNUAL PACKS & GET 1 FREE MEMBERSHIP! 🔥
+          </a>
         </div>
       </section>
 
@@ -331,14 +311,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 animate-fade-up delay-100 w-full md:w-[90%] mx-auto lg:w-full">
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[450px]">
-              <iframe 
+              <iframe
                 title="Gym Google Map"
-                src="https://maps.google.com/maps?q=Deep%20Fitness,%20Mysuru&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
+                src="https://maps.google.com/maps?q=Deep%20Fitness,%20Mysuru&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -355,7 +335,7 @@ export default function Home() {
                 <p className="text-xl font-bold">All day 5.30am to 10pm</p>
               </div>
               <div className="pt-4">
-                <button 
+                <button
                   onClick={() => window.open('https://maps.app.goo.gl/4p9pJ4TEjURc5Ss19')}
                   className="bg-surface-container-highest text-on-surface px-8 py-4 rounded font-black uppercase flex items-center gap-2 hover:scale-105 transition-transform shadow-lg"
                 >

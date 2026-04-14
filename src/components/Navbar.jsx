@@ -29,13 +29,14 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 -ml-2 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
-          <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-neutral-900 rounded-lg p-1">
+        <Link to="/" className="flex items-center gap-3 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
+          <div className="w-14 h-14 md:w-16 md:h-16 bg-neutral-900 rounded-xl flex items-center justify-center p-0.5 flex-shrink-0">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
           </div>
-          <span className="text-xl md:text-2xl font-black italic tracking-tighter text-neutral-900 uppercase">
-            Deep Fitness
-          </span>
+          <div className="flex flex-col leading-none">
+            <span className="text-lg md:text-xl font-black tracking-tighter text-neutral-900 uppercase">Deep Fitness</span>
+            <span className="text-[9px] font-bold tracking-widest text-neutral-400 uppercase">Transform · Achieve · Excel</span>
+          </div>
         </Link>
 
         {/* Desktop Links */}
