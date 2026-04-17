@@ -58,8 +58,8 @@ export default function Services() {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-2">Start Your Journey Today</h2>
           </div>
-          <a href="https://wa.me/919019550010?text=hi, would like to try your gym on a 3 day trial basis" target="_blank" rel="noopener noreferrer" className="relative z-10 bg-surface-container-highest text-on-surface px-10 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:scale-105 transition-transform active:scale-95 whitespace-nowrap inline-flex items-center gap-2">
-            START 3 DAY TRIAL <span className="material-symbols-outlined text-green-600">chat</span>
+          <a href="https://wa.me/919019550010?text=hi, would like to try your gym on a 1 day trial basis" target="_blank" rel="noopener noreferrer" className="relative z-10 bg-surface-container-highest text-on-surface px-10 py-5 rounded font-black uppercase tracking-widest shadow-xl hover:scale-105 transition-transform active:scale-95 whitespace-nowrap inline-flex items-center gap-2">
+            START 1 DAY TRIAL <span className="material-symbols-outlined text-green-600">chat</span>
           </a>
           {/* Decorative Element */}
           <div className="absolute top-0 right-0 w-64 h-full bg-white/10 -skew-x-12"></div>
@@ -78,8 +78,8 @@ export default function Services() {
           <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-center text-center ring-4 ring-primary relative scale-105 shadow-2xl animate-fade-up delay-100 z-10 w-full">
             <div className="absolute -top-4 bg-primary text-white text-[10px] font-black px-4 py-1 rounded-full uppercase">All-Inclusive Bonus</div>
             <div className="text-sm font-black uppercase mb-4 text-primary">Annual Membership</div>
-            <div className="text-5xl font-black mb-2">₹9,600</div>
-            <div className="text-sm font-black uppercase text-on-surface mb-6">+ 3 MONTHS FREE</div>
+            <div className="text-3xl font-black mb-2">Buy 12 Months</div>
+            <div className="text-sm font-black uppercase text-on-surface mb-6">GET 3 MONTHS FREE</div>
             <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
               <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Includes Zumba</p>
               <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Includes Kids Dance</p>
@@ -91,7 +91,7 @@ export default function Services() {
           <div className="bg-surface-container-highest p-8 rounded-2xl flex flex-col items-center text-center relative shadow-lg animate-fade-up delay-200 mt-0 lg:mt-8 mb-0 lg:mb-8 w-full">
             <div className="text-sm font-black uppercase mb-4 text-on-surface-variant">6 Months Plan</div>
             <div className="text-3xl font-black mb-2">Get 6 Months</div>
-            <div className="text-sm font-black uppercase text-primary mb-6">+ 2 M FREE</div>
+            <div className="text-sm font-black uppercase text-primary mb-6">+ 2 MONTHS FREE</div>
             <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
               <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Full Gym Access</p>
             </div>
@@ -102,7 +102,7 @@ export default function Services() {
           <div className="bg-surface-container-highest p-8 rounded-2xl flex flex-col items-center text-center relative shadow-lg animate-fade-up delay-300 mt-0 lg:mt-8 mb-0 lg:mb-8 w-full">
             <div className="text-sm font-black uppercase mb-4 text-on-surface-variant">3 Months Plan</div>
             <div className="text-3xl font-black mb-2">Get 3 Months</div>
-            <div className="text-sm font-black uppercase text-primary mb-6">+ 1 M FREE</div>
+            <div className="text-sm font-black uppercase text-primary mb-6">+ 1 MONTH FREE</div>
             <div className="mb-8 w-full border-t border-outline-variant/30 pt-6">
               <p className="text-sm font-bold text-on-surface mb-3 flex items-center justify-center gap-2"><span className="material-symbols-outlined text-primary text-sm">check_circle</span>Full Gym Access</p>
             </div>

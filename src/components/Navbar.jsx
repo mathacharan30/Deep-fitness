@@ -3,8 +3,8 @@ import { useState } from 'react';
 import logoImg from '../assets/logo.png';
 
 export default function Navbar() {
-  const whatsappNumber = "1234567890";
-  const phoneNumber = "1234567890";
+  const whatsappNumber = "919019550010";
+  const phoneNumber = "919019550010";
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,11 +29,13 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
-          <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-neutral-900 rounded-xl flex items-center justify-center p-0.5 flex-shrink-0">
-            <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
+        <Link to="/" className="flex items-center z-10" onClick={() => { setMenuOpen(false); window.scrollTo(0, 0); }}>
+          <div className="bg-neutral-900 px-3 py-2 md:px-4 md:py-2 rounded-xl flex items-center justify-center gap-2 md:gap-3 shadow-md">
+             <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center flex-shrink-0 bg-neutral-900 rounded-md p-0.5">
+               <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
+             </div>
+             <span className="text-lg md:text-2xl font-black tracking-tighter uppercase italic text-neutral-400 pr-1">Deep Fitness</span>
           </div>
-          <span className="text-xl md:text-2xl font-black tracking-tighter text-neutral-900 uppercase">Deep Fitness</span>
         </Link>
 
         {/* Desktop Links */}

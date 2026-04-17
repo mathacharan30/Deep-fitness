@@ -7,6 +7,10 @@ import imgAbout1 from '../assets/about/IMG20260408190236.jpg';
 import imgAbout2 from '../assets/about/IMG20260408193422.jpg';
 import imgAbout3 from '../assets/about/IMG20260408193906.jpg';
 import imgAbout4 from '../assets/about/IMG20260408194412.jpg';
+import imgTrainerSanjay from '../assets/trainers/sanjay.jpeg';
+import imgTrainerPramod from '../assets/trainers/pramodh head coach.jpeg';
+import imgTrainerVivek from '../assets/trainers/vivek.jpeg';
+import imgTrainerArjun from '../assets/trainers/Arjun.jpeg';
 
 export default function About() {
   return (
@@ -113,76 +117,54 @@ export default function About() {
               <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Our Coaches</span>
               <h2 className="text-5xl font-black tracking-tighter uppercase">Training Team</h2>
             </div>
-            <button className="hidden md:block border-2 border-primary px-8 py-3 font-bold uppercase tracking-widest text-xs text-primary hover:bg-primary hover:text-on-primary transition-colors rounded-lg">View All Coaches</button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Trainer 1 */}
             <div className="group animate-fade-up delay-100">
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWc1qM_IpkAq0_wEREz7SYuUQecnj_x0-cSRd1lqAyTMgBI74pGxdsZIXnJ6SrVqWkghw4opKdElfcBwd2tnOibLR-MXjHDz3TzKAXAE61otjkQxkoj2DjBj1ApMYvFmalyYkXQ5pu-tHHeS72kQuFXJqmpnHuj2DXJx4jEu9LVh_8bGDp1CzbRI_gYpnWynTgjhT9f7TcTi_bWFVJvN5kwvwLqYYihXUw4MXKPve9P91I7UEFDcNQfgQFHT3dkFHKtxtItlJbGKJD"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#121212]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">share</span>
-                    <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">info</span>
-                  </div>
-                </div>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-[center_top]" src={imgTrainerArjun}/>
               </div>
-              <h3 className="text-2xl font-black uppercase tracking-tighter">Marcus Thorne</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Head of Strength Training</p>
+              <h3 className="text-2xl font-black uppercase tracking-tighter">Arjun</h3>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Owner of Deep Fitness</p>
               <div className="space-y-1">
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 12 Years Elite Performance</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Powerlifting & Strength</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> Visionary</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">ROLE:</span> Gym Founder & Owner</p>
               </div>
             </div>
             {/* Trainer 2 */}
             <div className="group animate-fade-up delay-200">
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQN7448kIWAgJZQWytnZyUkt9ykWw8yYpQIUm-WIgbdlVp4xcDyS1kBU8M14seBogUkGVdB2e9wuvQbVuKRrYh2xAz6s9UC8zWY3ZKdkaqDPk9B1XHnFeQ_8r6i_4dcqu2y-UQBULifqy_djfAtD6vK09JL-duQTjgFj6clHxyMh6Q6Pw7Dfl3nsTfTYWafP92Lpam7bmhsJB7r46pUG4KeniMDUcUYg8BoImtNqhky5HvabSJkASZJuMtGdyKUMADw-CL4Yw5l3E"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">share</span>
-                  </div>
-                </div>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-[center_top]" src={imgTrainerPramod}/>
               </div>
-              <h3 className="text-2xl font-black uppercase tracking-tighter">Elena Vance</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Director of Yoga & Flow</p>
+              <h3 className="text-2xl font-black uppercase tracking-tighter">Pramod</h3>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Head coach of deep fitness</p>
               <div className="space-y-1">
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 9 Years Clinical Kinesiology</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Dynamic Flex & Flow</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 15+ years experience</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Workout designer & Certified trainer</p>
               </div>
             </div>
             {/* Trainer 3 */}
             <div className="group animate-fade-up delay-300">
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq7BeCMYQ04byStiEn0oXF_RohasuYC0KRvk_P3Wn5K82G7eelCJ75Kz1W2E8BS-FpPvvDzrBhBg0gI4M6DnU1VO0-8ijGacewq1awi1L4vZq3l009lzEkj766dI0p-gyWt1hOZmVVfSKKisQyrjiImyF5lAEIDOa9ZFvwvnMqd2SwiTWIpApI7nd0a149bptsVwoe2dl493CaHJ381bMANcch33S2zXU7YY5k0NNNvtYPqv7Erp761tLwxYrLv1uRuf4VUdO_vH2Q"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">share</span>
-                  </div>
-                </div>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-[center_top]" src={imgTrainerSanjay}/>
               </div>
-              <h3 className="text-2xl font-black uppercase tracking-tighter">Julian Kross</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Body Transformation Expert</p>
+              <h3 className="text-2xl font-black uppercase tracking-tighter">Sanjay S</h3>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Certified Trainer</p>
               <div className="space-y-1">
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 15 Years Body Recomp</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Muscle Building</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 3 Years</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Dance fitness</p>
               </div>
             </div>
             {/* Trainer 4 */}
             <div className="group animate-fade-up delay-400">
               <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2zH6UP5jVlxjJ90im2d0eIDXVp4sETWdN0SMRmoOZTxpj4c9-LtTG72d5HU9NzhkkDio95jeKCe7CDrP_ZtgHSjV5P2BkrGYm8OKShINts_wDcBeooq86NzBo9IrnuJGvaJw9HFNXrsPOr5xTefhihaCCcPVg3CuMMXBRe1Ysah5APh0K45IL3U2haaH9CY2HOQNn-ZKBYDAKNKq9d-3AVJIpMwCUcGsJzOFQFDfm_V_GTPx6iQ7PhjVeU9pSbPcSGHIfx4Sz3_xl"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-white cursor-pointer hover:text-primary-container">share</span>
-                  </div>
-                </div>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-[center_top]" src={imgTrainerVivek}/>
               </div>
-              <h3 className="text-2xl font-black uppercase tracking-tighter">Sasha Reed</h3>
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Lead Metabolic Coach</p>
+              <h3 className="text-2xl font-black uppercase tracking-tighter">Vivek V</h3>
+              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">HIIT Specialist</p>
               <div className="space-y-1">
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> 7 Years Sports Nutrition</p>
-                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> Fat Loss & Endurance</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">EXP:</span> Elite Trainer</p>
+                <p className="text-sm text-on-surface-variant"><span className="font-bold text-on-surface">SPEC:</span> HIIT & Conditioning</p>
               </div>
             </div>
           </div>
